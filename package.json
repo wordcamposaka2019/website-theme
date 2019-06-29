@@ -1,0 +1,23 @@
+{
+  "name": "WordCamp Osaka 2019 Production Theme",
+  "version": "1.0.0",
+  "description": "Theme for WordCamp Osaka 2019",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass":
+      "node-sass ./scss/wcosaka2019.scss -o ./docs/css/ --output-style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wordcamposaka2019/website-theme.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/wordcamposaka2019/website-theme/issues"
+  },
+  "homepage": "https://github.com/wordcamposaka2019/website-theme#readme"
+}
