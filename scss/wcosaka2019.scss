@@ -3,11 +3,11 @@
 
 @import "global/_rule";
 @import "global/_base";
-// @import "global/header";
-// @import "global/navigation";
-// @import "global/footer";
-// @import "project/post-format";
-// @import "project/page";
-// @import "project/front-page";
-// @import "project/sponsor";
-// @import "project/ticket";
+@import "global/_header";
+@import "global/_navigation";
+// @import "global/_footer";
+// @import "project/_post-format";
+// @import "project/_page";
+@import "project/_front-page";
+// @import "project/_sponsor";
+// @import "project/_ticket";

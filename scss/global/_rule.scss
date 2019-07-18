@@ -7,38 +7,4 @@ $gray: #777673;
 $black: #000;
 $white: #fff;
 $ff-mplus: 'M PLUS 1p';
-
-$post-top: 6;
-
-.f-bg--maincolor {
-  position: relative;
-  padding-top: 176px;
-  padding-bottom: 160px;
-  &::before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    margin: auto;
-    width: 100vw;
-    height: 100%;
-    z-index: -1;
-    background: $main-color;
-  }
-}
-.f-bg--maincolor-lignt {
-  position: relative;
-  padding-top: 176px;
-  padding-bottom: 160px;
-  &::before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    margin: auto;
-    width: 100vw;
-    height: 100%;
-    z-index: -1;
-    background: $main-color-light;
-  }
-}
+$ff-base: 'Noto Sans JP';
