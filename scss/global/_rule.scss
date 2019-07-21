@@ -8,3 +8,48 @@ $black: #000;
 $white: #fff;
 $ff-mplus: 'M PLUS 1p';
 $ff-base: 'Noto Sans JP';
+
+//Misxin
+$widepc: 1379px;
+$pc: 1168px; // PC
+$tab: 768px; // タブレット
+$sp: 600px;  // スマホ
+
+@mixin widepc {
+  @media (min-width: ($widepc)) {
+    @content;
+  }
+}
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (min-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (min-width: ($sp)) {
+    @content;
+  }
+}
+
+@mixin arch-wide {
+  border-bottom-right-radius: 1160px 300px;
+  border-bottom-left-radius: 1160px 300px;
+  margin-left: -200px;
+  margin-right: -200px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+@mixin arch-min {
+  border-bottom-right-radius: 760px 300px;
+  border-bottom-left-radius: 760px 300px;
+  margin-left: -200px;
+  margin-right: -200px;
+  padding-left: 200px;
+  padding-right: 200px;
+}

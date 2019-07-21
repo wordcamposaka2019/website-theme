@@ -1,6 +1,17 @@
 @charset "utf-8";
 #masthead {
-  min-height: 1021px;
-  background: url(../images/img_mainvisual.jpg) center top no-repeat;
+  height: 520px;
+  padding-top: 160px;
+  background: url(../images/img_mainvisual.jpg) center no-repeat;
   background-size: cover;
+  @include arch-min;
+
+  @include tab {
+    height: 720px;
+  }
+  @include pc {
+    height: 100vh;
+    max-height: 1021px;
+    @include arch-wide;
+  }
 }

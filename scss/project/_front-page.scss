@@ -1,16 +1,40 @@
 @charset "utf-8";
 #post-6 {
   .entry-content {
-    max-width: 100%;
+    max-width: inherit;
     margin: 0 auto;
     padding: 0;
     
     > * {
-      max-width: 100%;
+      max-width: inherit;
     }
-    .l-container {
-      max-width: 1260px;
-      margin: 0 auto;
+    @include pc {
+      .l-container {
+        max-width: 1260px;
+        margin: 0 auto;
+      }
+    }
+    > .u-arch {
+      @include arch-min;
+    
+      @include pc {
+        @include arch-wide
+      }
+    }
+    .wp-block-columns {
+      justify-content: center;
+    }
+    .wp-block-column {
+      margin-right: 24px;
+      margin-left: 24px;
+
+      @include sp {
+        flex-basis: calc(50% - 48px);
+      }
+
+      @include pc {
+        max-width: 630px;
+      }
     }
   }
   .l-gmap {

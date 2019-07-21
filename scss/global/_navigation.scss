@@ -4,14 +4,22 @@
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 80px;
+  height: 48px;
   background-color: rgba($white,.6);
   z-index: 10;
   font-family: $ff-mplus, sans-serif;
-  font-size: 1.125rem;
+
+  @include tab {
+    height: 64px;
+  }
+
+  @include pc {
+    height: 80px;
+  }
 }
 .main-navigation {
   margin-top: 0;
+
   .menu-headermenu-container {
     display: block;
     max-width: 1260px;
