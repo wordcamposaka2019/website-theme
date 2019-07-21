@@ -16,9 +16,18 @@ h1:lang(ja), h2:lang(ja), h3:lang(ja), h4:lang(ja), h5:lang(ja), h6:lang(ja) {
   font-family: $ff-mplus, sans-serif;
 }
 h2 {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   position: relative;
-  padding-bottom: 64px;
+  padding-bottom: 32px;
+
+  @include tab {
+    margin-bottom: 3rem;
+    padding-bottom: 64px;
+  }
+
+  @include pc {
+    margin-bottom: 4rem;
+  }
 
   &::before {
     content: "";
@@ -27,45 +36,54 @@ h2 {
     right: 0;
     bottom: 0;
     left: 0;
-    width: 70px;
-    height: 33px;
-    margin: 1rem auto;
+    margin: auto;
+    width: 34px;
+    height: 16px;
+
+    @include tab {
+      width: 68px;
+      height: 32px;  
+    }
   }
   &.u-on-basecolor {
     &::before {
-      background: url(../images/icon_takoyaki_subcolor.svg);
+      background: url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_takoyaki_subcolor.png) bottom no-repeat;
+      background-size: 34px auto;
+
+      @include tab {
+        background-size: auto;
+      }
+
     }
   }
   &.u-on-maincolor {
     &::before {
-      background: url(../images/icon_takoyaki_white.svg);
+      background: url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_takoyaki_white.png) bottom no-repeat;
+      background-size: 34px auto;
+
+      @include tab {
+        background-size: auto;
+      }
     }
   }
 }
-/* ↑の別ver. svgが表示されてないので保留中
-h2 {
-  margin-bottom: 4rem;
-  position: relative;
-  padding-bottom: 64px;
-  margin: 1rem auto;
-  
-  &.u-on-basecolor {
-    background: url(../images/icon_takoyaki_subcolor.svg) center bottom no-repeat;
-    background-size: 70px 33px;
-  }
-  &.u-on-maincolor {
-    background: url(../images/icon_takoyaki_white.svg) center bottom no-repeat;
-    background-size: 70px 33px;
-  }
-}
-*/
 
 // entry
 .entry {
   .entry-header {
     text-align: center;
+
+    @include tab {
+      margin-top: 96px;
+    }
+
+    @include pc {
+      margin-top: 142px;
+    }
   }
   .entry-title {
+    margin-bottom: 1em;
+
     &::before {
       display: none;
     }
@@ -76,9 +94,15 @@ h2 {
   }
 }
 .entry-content{
+
   .l-container {
-    max-width: 1260px;
     margin: 0 auto;
+    padding-right: 24px;
+    padding-left: 24px;
+
+    @include pc {
+      max-width: 1260px + 48px;
+    }
   }
 }
 
@@ -119,5 +143,74 @@ h2 {
     height: 200px;
     background: $main-color;
     z-index: -1;
+  }
+}
+.u-pad--secT-lg {
+  padding-top: 48px;
+
+  @include tab {
+    padding-top: 64px;
+  }
+
+  @include pc {
+    padding-top: 96px;
+  }
+}
+.u-pad--secT-md {
+  padding-top: 32px;
+
+  @include tab {
+    padding-top: 56px;
+  }
+
+  @include pc {
+    padding-top: 72px;
+  }
+}
+.u-pad--secB-lg {
+  padding-bottom: 48px;
+
+  @include tab {
+    padding-bottom: 64px;
+  }
+
+  @include pc {
+    padding-bottom: 96px;
+  }
+}
+.u-pad--secB-md {
+  padding-bottom: 32px;
+
+  @include tab {
+    padding-bottom: 56px;
+  }
+
+  @include pc {
+    padding-bottom: 72px;
+  }
+}
+.u-margR--md {
+  margin-right: 24px;
+}
+.u-margL--md {
+  margin-left: 24px;
+}
+.u-align-c {
+  text-align: center;
+
+  &.is-tab {
+    text-align: inherit;
+
+    @include tab {
+      text-align: center;
+    }
+  }
+
+  &.is-pc {
+    text-align: inherit;
+
+    @include pc {
+      text-align: center;
+    }
   }
 }
