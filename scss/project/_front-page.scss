@@ -10,7 +10,7 @@
     }
     @include pc {
       .l-container {
-        max-width: 1260px;
+        max-width: 1260 + 48px;
         margin: 0 auto;
       }
     }
@@ -33,7 +33,7 @@
       }
 
       @include pc {
-        max-width: 618px;
+        max-width: 606px;
       }
     }
   }

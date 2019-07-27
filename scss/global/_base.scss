@@ -1,24 +1,52 @@
 html {
   font-size: 100%;
+  overflow-x: hidden;
 }
 body {
   background: $base-color;
   color: $body-fontcolor;
   font-size: 1rem;
+  overflow-x: hidden;
 
   @include tab {
     font-size: 1.125rem;
   }
+}
+// Base Font
+body:lang(ja), button:lang(ja), input:lang(ja), select:lang(ja), optgroup:lang(ja), textarea:lang(ja), .author-description .author-link:lang(ja), .comment-metadata:lang(ja), .comment-reply-link:lang(ja), .comments-title:lang(ja), .comment-author .fn:lang(ja), .discussion-meta-info:lang(ja), .entry-meta:lang(ja), .entry-footer:lang(ja), .main-navigation:lang(ja), .no-comments:lang(ja), .not-found .page-title:lang(ja), .error-404 .page-title:lang(ja), .post-navigation .post-title:lang(ja), .page-links:lang(ja), .page-description:lang(ja), .pagination .nav-links:lang(ja), .sticky-post:lang(ja), .site-title:lang(ja), .site-info:lang(ja), #cancel-comment-reply-link:lang(ja), h1:lang(ja), h2:lang(ja), h3:lang(ja), h4:lang(ja), h5:lang(ja), h6:lang(ja), .page-title:lang(ja), blockquote cite:lang(ja), table:lang(ja), .button:lang(ja), input:lang(ja)[type="button"], input:lang(ja)[type="reset"], input:lang(ja)[type="submit"], .comment-navigation .nav-previous:lang(ja), .comment-navigation .nav-next:lang(ja), .comment-list .pingback .comment-body:lang(ja), .comment-list .trackback .comment-body:lang(ja), .comment-list .pingback .comment-body .comment-edit-link:lang(ja), .comment-list .trackback .comment-body .comment-edit-link:lang(ja), .comment-form .comment-notes:lang(ja), .comment-form label:lang(ja), .widget_archive ul li:lang(ja), .widget_categories ul li:lang(ja), .widget_meta ul li:lang(ja), .widget_nav_menu ul li:lang(ja), .widget_pages ul li:lang(ja), .widget_recent_comments ul li:lang(ja), .widget_recent_entries ul li:lang(ja), .widget_rss ul li:lang(ja), .widget_tag_cloud .tagcloud:lang(ja), .entry .entry-content .wp-block-button .wp-block-button__link:lang(ja), .entry .entry-content .wp-block-archives li:lang(ja), .entry .entry-content .wp-block-categories li:lang(ja), .entry .entry-content .wp-block-latest-posts li:lang(ja), .entry .entry-content .wp-block-verse:lang(ja), .entry .entry-content .has-drop-cap:lang(ja):not(:focus):first-letter, .entry .entry-content .wp-block-pullquote cite:lang(ja), .entry .entry-content .wp-block-cover-image .wp-block-cover-image-text:lang(ja), .entry .entry-content .wp-block-cover-image .wp-block-cover-text:lang(ja), .entry .entry-content .wp-block-cover-image h2:lang(ja), .entry .entry-content .wp-block-cover .wp-block-cover-image-text:lang(ja), .entry .entry-content .wp-block-cover .wp-block-cover-text:lang(ja), .entry .entry-content .wp-block-cover h2:lang(ja), .entry .entry-content .wp-block-audio figcaption:lang(ja), .entry .entry-content .wp-block-video figcaption:lang(ja), .entry .entry-content .wp-block-image figcaption:lang(ja), .entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption:lang(ja), .entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption:lang(ja), .entry .entry-content .wp-block-file:lang(ja), .entry .entry-content .wp-block-file .wp-block-file__button:lang(ja), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(ja), .wp-caption-text:lang(ja), .gallery-caption:lang(ja){
+  font-family: $ff-base sans-serif;
 }
 
 // headline style
 h1:lang(ja), h2:lang(ja), h3:lang(ja), h4:lang(ja), h5:lang(ja), h6:lang(ja) {
   font-family: $ff-mplus, sans-serif;
 }
+.entry-title,
+.not-found .page-title,
+.error-404 .page-title,
+.has-larger-font-size,
+h2 {
+  font-size: 1.6875em;
+
+  @include tab { 
+    font-size: 2.78em;
+  }
+}
+.has-regular-font-size,
+.has-large-font-size,
+.comments-title,
+h3 {
+  font-size: 1.6875em;
+
+  @include tab {
+    font-size: 1.22em;;
+  }
+}
 h2 {
   margin-bottom: 2rem;
   position: relative;
   padding-bottom: 32px;
+  letter-spacing: .2em;
 
   @include tab {
     margin-bottom: 3rem;
@@ -53,7 +81,6 @@ h2 {
       @include tab {
         background-size: auto;
       }
-
     }
   }
   &.u-on-maincolor {
@@ -67,7 +94,31 @@ h2 {
     }
   }
 }
+h3 {
+  position: relative;
+  margin-top: 2em;
+  padding-left: 24px;
 
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 4px;
+    background-color: $sub-color;
+    border-radius: 2px;
+  }
+  &::before {
+    height: 18px;
+    top: 4px;
+    left: 0;
+  }
+  &::after {
+    height: 10px;
+    top: 12px;
+    left: 8px;
+  }
+}
 // entry
 .entry {
   .entry-header {
@@ -105,6 +156,13 @@ h2 {
     }
   }
 }
+// Component
+.c-dl {
+  dd {
+    margin-left: 0;
+  }
+}
+
 
 // utility
 .u-arch {
