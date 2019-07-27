@@ -36,10 +36,10 @@ h2 {
 .has-large-font-size,
 .comments-title,
 h3 {
-  font-size: 1.6875em;
+  font-size: 1.22em;
 
   @include tab {
-    font-size: 1.22em;;
+    font-size: 1.22em;
   }
 }
 h2 {
@@ -96,7 +96,7 @@ h2 {
 }
 h3 {
   position: relative;
-  margin-top: 2em;
+  margin-top: 2.5rem;
   padding-left: 24px;
 
   &::before,
@@ -252,6 +252,13 @@ h3 {
 }
 .u-margL--md {
   margin-left: 24px;
+}
+.u-sp-margT--2em {
+  margin-top: 2em;
+
+  @include tab {
+    margin-top: inherit;
+  }
 }
 .u-align-c {
   text-align: center;
