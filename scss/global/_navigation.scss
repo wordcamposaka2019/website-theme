@@ -19,17 +19,47 @@
 }
 .main-navigation {
   margin-top: 0;
+  padding-top: 12px;
+  font-size: 0.9375rem;
+  text-align: center;
+
+  @include tab {
+    padding-top: 20px;
+    font-size: 1rem;
+  }
+
+  @include pc {
+    padding-top: 24px;
+    font-size: 1em;
+  }
 
   .menu-headermenu-container {
-    display: block;
     max-width: 1260px;
     margin: 0 auto;
-    padding: 24px;
     text-align: center;
   }
   .main-menu {
     > li {
-      margin: 0 1rem;
+      margin: 0 0.5rem;
+      color: $body-fontcolor;
+
+      > a,
+      > a + svg {
+        font-weight: 400;
+        color: $body-fontcolor;
+      }
+
+      > a:hover,
+      > a:hover + svg {
+        color: $sub-color;
+      }
+
+      @include tab {
+        margin: 0 1rem;        
+      }
+    }
+    .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu {
+      margin-top: 12px;
     }
   }
 }
