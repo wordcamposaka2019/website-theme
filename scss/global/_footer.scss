@@ -1,12 +1,56 @@
 @charset "utf-8";
 // sns
 .p-sns {
+  padding-left: 0;
+  text-align: center;
+
   li {
     display: inline-block;
+    margin: 0 1rem;
     text-align: center;
 
     a {
       display: block;
     }
+
+    img {
+      width: 40px;
+      height: 40px;
+
+      @include tab {
+        width: 64px;
+        height: 64px;
+      }
+
+      @include pc {
+        width: 90px;
+        height: 90px;
+      }
+    }
+  }
+}
+#colophon .site-info {
+  margin: 0;
+  padding: 80+16px 24px 40px;
+  background: $gray url('https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/logo_wp.png') center 40px no-repeat;
+  background-size: 40px auto;
+  text-align: center;
+  color: #FFF;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  word-wrap: break-word;
+
+  @include tab {
+    padding: 64+72+24px 24px 64px;
+    background: $gray url('https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/logo_wp.png') center 64px no-repeat;
+    background-size: 72px auto;
+  }
+
+  @include pc {
+    padding: 64+80+24px 24px 64px;
+    background: $gray url('https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/logo_wp.png') center 64px no-repeat;    
+    background-size: 80px auto;
   }
 }

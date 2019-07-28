@@ -156,6 +156,15 @@ h3 {
     }
   }
 }
+//widget
+#colophon .widget-column .widget {
+
+  @include pc {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
 // Component
 .c-dl {
   dd {
