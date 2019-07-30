@@ -17,6 +17,25 @@ body:lang(ja), button:lang(ja), input:lang(ja), select:lang(ja), optgroup:lang(j
   font-family: $ff-base sans-serif;
 }
 
+// Links
+a {
+  color: $sub-color;
+}
+
+a:visited {
+  color: $sub-color;
+}
+
+a:hover,
+a:active {
+  color: $sub-color-deep;
+}
+
+a:focus {
+  outline: thin dotted;
+  text-decoration: underline;
+}
+
 // headline style
 h1:lang(ja), h2:lang(ja), h3:lang(ja), h4:lang(ja), h5:lang(ja), h6:lang(ja) {
   font-family: $ff-mplus, sans-serif;

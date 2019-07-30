@@ -58,8 +58,38 @@
         margin: 0 1rem;        
       }
     }
-    .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu {
-      margin-top: 12px;
+  }
+  button:hover,
+  button:focus {
+    color: $sub-color;
+  }
+  .sub-menu {
+    background-color: $sub-color;
+
+    > li {
+    
+      > a,
+      > .menu-item-link-return {
+        padding: .5rem 1rem;
+      }
+
+      > a:hover,
+      > a:focus,
+      > .menu-item-link-return:hover,
+      > .menu-item-link-return:focus {
+        background-color: $sub-color-deep;
+      }
     }
+  }
+}
+.main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu.hidden-links, .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus > .sub-menu.hidden-links, .main-navigation .main-menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu.hidden-links {
+  top: 48px;
+
+  @include tab {
+    top: 64px;
+  }
+
+  @include pc {
+    top: 80px;
   }
 }
