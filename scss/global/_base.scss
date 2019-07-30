@@ -36,6 +36,48 @@ a:focus {
   text-decoration: underline;
 }
 
+// main
+.site-main {
+  position: relative;
+  padding-bottom: 48px;
+
+  @include tab {
+    padding-bottom: 64px;
+  }
+
+  @include pc {
+    padding-bottom: 96px;
+  }
+
+  &::before {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: calc(100% + 400px);
+    height: 400px;
+    background-color: $base-color;
+    z-index: -1;
+
+    @include arch-min;
+
+    @include pc {
+      @include arch-wide;
+    }
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: $main-color-light;
+    z-index: -2;
+  }
+}
+
 // headline style
 h1:lang(ja), h2:lang(ja), h3:lang(ja), h4:lang(ja), h5:lang(ja), h6:lang(ja) {
   font-family: $ff-mplus, sans-serif;
@@ -190,7 +232,6 @@ h3 {
     margin-left: 0;
   }
 }
-
 
 // utility
 .u-arch {
