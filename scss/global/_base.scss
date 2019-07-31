@@ -103,83 +103,97 @@ h3 {
     font-size: 1.22em;
   }
 }
-h2 {
-  margin-bottom: 2rem;
-  position: relative;
-  padding-bottom: 32px;
-  letter-spacing: .2em;
 
-  @include tab {
-    margin-bottom: 3rem;
-    padding-bottom: 64px;
-  }
 
-  @include pc {
-    margin-bottom: 4rem;
-  }
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    width: 34px;
-    height: 16px;
-
-    @include tab {
-      width: 68px;
-      height: 32px;  
-    }
-  }
-  &.u-on-basecolor {
-    &::before {
-      background: url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_takoyaki_subcolor.png) bottom no-repeat;
-      background-size: 34px auto;
-
+.entry {
+  .entry-content {
+    .entry-title,
+    .not-found .page-title,
+    .error-404 .page-title,
+    h2 {
+      margin-bottom: 2rem;
+      position: relative;
+      padding-bottom: 32px;
+      letter-spacing: .2em;
+    
       @include tab {
-        background-size: auto;
+        margin-bottom: 3rem;
+        padding-bottom: 64px;
+      }
+    
+      @include pc {
+        margin-bottom: 4rem;
+      }
+    
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 34px;
+        height: 16px;
+        background: url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_takoyaki_subcolor.png) bottom no-repeat;
+        background-size: 34px auto;
+    
+        @include tab {
+          width: 68px;
+          height: 32px;
+          background-size: auto;
+        }
+      }
+      &.u-on-basecolor {
+        &::before {
+          background: url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_takoyaki_subcolor.png) bottom no-repeat;
+          background-size: 34px auto;
+    
+          @include tab {
+            background-size: auto;
+          }
+        }
+      }
+      &.u-on-maincolor {
+        &::before {
+          background: url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_takoyaki_white.png) bottom no-repeat;
+          background-size: 34px auto;
+    
+          @include tab {
+            background-size: auto;
+          }
+        }
       }
     }
-  }
-  &.u-on-maincolor {
-    &::before {
-      background: url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_takoyaki_white.png) bottom no-repeat;
-      background-size: 34px auto;
-
-      @include tab {
-        background-size: auto;
+    h3 {
+      position: relative;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      padding-left: 24px;
+    
+      &::before,
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 4px;
+        background-color: $sub-color;
+        border-radius: 2px;
+      }
+      &::before {
+        height: 18px;
+        top: 4px;
+        left: 0;
+      }
+      &::after {
+        height: 10px;
+        top: 12px;
+        left: 8px;
       }
     }
   }
 }
-h3 {
-  position: relative;
-  margin-top: 2.5rem;
-  padding-left: 24px;
 
-  &::before,
-  &::after {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 4px;
-    background-color: $sub-color;
-    border-radius: 2px;
-  }
-  &::before {
-    height: 18px;
-    top: 4px;
-    left: 0;
-  }
-  &::after {
-    height: 10px;
-    top: 12px;
-    left: 8px;
-  }
-}
 // entry
 .entry {
   .entry-header {
@@ -199,6 +213,15 @@ h3 {
     &::before {
       display: none;
     }
+  }
+  .entry-content,
+  .entry-summary {
+    max-width: calc(100% - 2rem);
+    margin: 0 1rem;
+  
+      @include pc {
+        max-width: 1260px;
+      }
   }
   .entry-content > *,
   .entry-summary > * {

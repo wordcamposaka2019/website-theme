@@ -1,23 +1,47 @@
 @charset "utf-8";
 .site-footer {
   background-color: $main-color-light;
+
+  .widget-title {
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 32px;
+    letter-spacing: .2em;
+  
+    @include tab {
+      margin-bottom: 3rem;
+      padding-bottom: 64px;
+    }
+  
+    @include pc {
+      margin-bottom: 4rem;
+    }
+  
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 34px;
+      height: 16px;
+      background: url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_takoyaki_white.png) bottom no-repeat;
+      background-size: 34px auto;
+
+      @include tab {
+        width: 68px;
+        height: 32px;
+        background-size: auto;
+      }
+    }
+  }
 }
 
 //sponsers 
 .wcb_widget_sponsors {
   text-align: center;
-
-  .widget-title {
-
-    &::before {
-      background: url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_takoyaki_white.png) bottom no-repeat;
-      background-size: 34px auto;
-
-      @include tab {
-        background-size: auto;
-      }
-    }
-  }
 }
 
 // sns
