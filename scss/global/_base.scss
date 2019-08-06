@@ -103,8 +103,6 @@ h3 {
     font-size: 1.22em;
   }
 }
-
-
 .entry {
   .entry-content {
     .entry-title,
@@ -191,6 +189,25 @@ h3 {
         left: 8px;
       }
     }
+    h4 {
+      color: $sub-color;
+      font-weight: bold;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .wp-block-quote:not(.is-large),
+    .wp-block-quote:not(.is-style-large) {
+      padding: 1.5rem 1.5rem 1.5rem 48px;
+      border-width: 0;
+      background: $base-color-deep url('https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_quote.png') 54px center no-repeat;
+      background-size: 30px auto;
+
+      @include pc {
+        padding: 40px 72px 40px 160px;
+        background: $base-color-deep url('https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_quote.png') 54px center no-repeat;
+        background-size: 60px auto;
+      }
+    }
   }
 }
 
@@ -216,12 +233,8 @@ h3 {
   }
   .entry-content,
   .entry-summary {
-    max-width: calc(100% - 2rem);
-    margin: 0 1rem;
-  
-      @include pc {
-        max-width: 1260px;
-      }
+    max-width: calc(100% - 3rem);
+    margin: 0 auto; 
   }
   .entry-content > *,
   .entry-summary > * {
