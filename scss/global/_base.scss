@@ -199,12 +199,12 @@ h3 {
     .wp-block-quote:not(.is-style-large) {
       padding: 1.5rem 1.5rem 1.5rem 48px;
       border-width: 0;
-      background: $base-color-deep url('https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_quote.png') 54px center no-repeat;
+      background: $base-color-deep url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_quote.png) 54px center no-repeat;
       background-size: 30px auto;
 
       @include pc {
         padding: 40px 72px 40px 160px;
-        background: $base-color-deep url('https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_quote.png') 54px center no-repeat;
+        background: $base-color-deep url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_quote.png) 54px center no-repeat;
         background-size: 60px auto;
       }
     }
