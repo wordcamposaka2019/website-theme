@@ -56,3 +56,25 @@ $sp: 600px;  // スマホ
   padding-left: 200px;
   padding-right: 200px;
 }
+
+@mixin arrow-right--white {
+  width: .5em;
+  height: .5em;
+  margin: auto;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-top: 2px solid $white;
+  border-right: 2px solid $white;
+  border-radius: 1px;
+}
+
+@mixin arrow-right--sub {
+  width: .5em;
+  height: .5em;
+  margin: auto;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-top: 2px solid $sub-color;
+  border-right: 2px solid $sub-color;
+  border-radius: 1px;
+}

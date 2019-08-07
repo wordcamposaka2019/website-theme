@@ -13,8 +13,8 @@ body {
   }
 }
 // Base Font
-body:lang(ja), button:lang(ja), input:lang(ja), select:lang(ja), optgroup:lang(ja), textarea:lang(ja), .author-description .author-link:lang(ja), .comment-metadata:lang(ja), .comment-reply-link:lang(ja), .comments-title:lang(ja), .comment-author .fn:lang(ja), .discussion-meta-info:lang(ja), .entry-meta:lang(ja), .entry-footer:lang(ja), .main-navigation:lang(ja), .no-comments:lang(ja), .not-found .page-title:lang(ja), .error-404 .page-title:lang(ja), .post-navigation .post-title:lang(ja), .page-links:lang(ja), .page-description:lang(ja), .pagination .nav-links:lang(ja), .sticky-post:lang(ja), .site-title:lang(ja), .site-info:lang(ja), #cancel-comment-reply-link:lang(ja), h1:lang(ja), h2:lang(ja), h3:lang(ja), h4:lang(ja), h5:lang(ja), h6:lang(ja), .page-title:lang(ja), blockquote cite:lang(ja), table:lang(ja), .button:lang(ja), input:lang(ja)[type="button"], input:lang(ja)[type="reset"], input:lang(ja)[type="submit"], .comment-navigation .nav-previous:lang(ja), .comment-navigation .nav-next:lang(ja), .comment-list .pingback .comment-body:lang(ja), .comment-list .trackback .comment-body:lang(ja), .comment-list .pingback .comment-body .comment-edit-link:lang(ja), .comment-list .trackback .comment-body .comment-edit-link:lang(ja), .comment-form .comment-notes:lang(ja), .comment-form label:lang(ja), .widget_archive ul li:lang(ja), .widget_categories ul li:lang(ja), .widget_meta ul li:lang(ja), .widget_nav_menu ul li:lang(ja), .widget_pages ul li:lang(ja), .widget_recent_comments ul li:lang(ja), .widget_recent_entries ul li:lang(ja), .widget_rss ul li:lang(ja), .widget_tag_cloud .tagcloud:lang(ja), .entry .entry-content .wp-block-button .wp-block-button__link:lang(ja), .entry .entry-content .wp-block-archives li:lang(ja), .entry .entry-content .wp-block-categories li:lang(ja), .entry .entry-content .wp-block-latest-posts li:lang(ja), .entry .entry-content .wp-block-verse:lang(ja), .entry .entry-content .has-drop-cap:lang(ja):not(:focus):first-letter, .entry .entry-content .wp-block-pullquote cite:lang(ja), .entry .entry-content .wp-block-cover-image .wp-block-cover-image-text:lang(ja), .entry .entry-content .wp-block-cover-image .wp-block-cover-text:lang(ja), .entry .entry-content .wp-block-cover-image h2:lang(ja), .entry .entry-content .wp-block-cover .wp-block-cover-image-text:lang(ja), .entry .entry-content .wp-block-cover .wp-block-cover-text:lang(ja), .entry .entry-content .wp-block-cover h2:lang(ja), .entry .entry-content .wp-block-audio figcaption:lang(ja), .entry .entry-content .wp-block-video figcaption:lang(ja), .entry .entry-content .wp-block-image figcaption:lang(ja), .entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption:lang(ja), .entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption:lang(ja), .entry .entry-content .wp-block-file:lang(ja), .entry .entry-content .wp-block-file .wp-block-file__button:lang(ja), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(ja), .wp-caption-text:lang(ja), .gallery-caption:lang(ja){
-  font-family: $ff-base sans-serif;
+body:lang(ja), button:lang(ja), input:lang(ja), select:lang(ja), optgroup:lang(ja), textarea:lang(ja), .author-description .author-link:lang(ja), .comment-metadata:lang(ja), .comment-reply-link:lang(ja), .comments-title:lang(ja), .comment-author .fn:lang(ja), .discussion-meta-info:lang(ja), .entry-meta:lang(ja), .entry-footer:lang(ja), .main-navigation:lang(ja), .no-comments:lang(ja), .not-found .page-title:lang(ja), .error-404 .page-title:lang(ja), .post-navigation .post-title:lang(ja), .page-links:lang(ja), .page-description:lang(ja), .pagination .nav-links:lang(ja), .sticky-post:lang(ja), .site-title:lang(ja), .site-info:lang(ja), #cancel-comment-reply-link:lang(ja), h1:lang(ja), h2:lang(ja), h3:lang(ja), h4:lang(ja), h5:lang(ja), h6:lang(ja), .page-title:lang(ja), blockquote cite:lang(ja), table:lang(ja), .button:lang(ja), input:lang(ja)[type="button"], input:lang(ja)[type="reset"], input:lang(ja)[type="submit"], .comment-navigation .nav-previous:lang(ja), .comment-navigation .nav-next:lang(ja), .comment-list .pingback .comment-body:lang(ja), .comment-list .trackback .comment-body:lang(ja), .comment-list .pingback .comment-body .comment-edit-link:lang(ja), .comment-list .trackback .comment-body .comment-edit-link:lang(ja), .comment-form .comment-notes:lang(ja), .comment-form label:lang(ja), .widget_archive ul li:lang(ja), .widget_categories ul li:lang(ja), .widget_meta ul li:lang(ja), .widget_nav_menu ul li:lang(ja), .widget_pages ul li:lang(ja), .widget_recent_comments ul li:lang(ja), .widget_recent_entries ul li:lang(ja), .widget_rss ul li:lang(ja), .widget_tag_cloud .tagcloud:lang(ja), .entry .entry-content .wp-block-button .wp-block-button__link:lang(ja), .entry .entry-content .wp-block-archives li:lang(ja), .entry .entry-content .wp-block-categories li:lang(ja), .entry .entry-content .wp-block-latest-posts li:lang(ja), .entry .entry-content .wp-block-verse:lang(ja), .entry .entry-content .has-drop-cap:lang(ja):not(:focus):first-letter, .entry .entry-content .wp-block-pullquote cite:lang(ja), .entry .entry-content .wp-block-cover-image .wp-block-cover-image-text:lang(ja), .entry .entry-content .wp-block-cover-image .wp-block-cover-text:lang(ja), .entry .entry-content .wp-block-cover-image h2:lang(ja), .entry .entry-content .wp-block-cover .wp-block-cover-image-text:lang(ja), .entry .entry-content .wp-block-cover .wp-block-cover-text:lang(ja), .entry .entry-content .wp-block-cover h2:lang(ja), .entry .entry-content .wp-block-audio figcaption:lang(ja), .entry .entry-content .wp-block-video figcaption:lang(ja), .entry .entry-content .wp-block-image figcaption:lang(ja), .entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption:lang(ja), .entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption:lang(ja), .entry .entry-content .wp-block-file:lang(ja), .entry .entry-content .wp-block-file .wp-block-file__button:lang(ja), .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta:lang(ja), .wp-caption-text:lang(ja), .gallery-caption:lang(ja) {
+  font-family: $ff-base, sans-serif;
 }
 
 // Links
@@ -103,16 +103,64 @@ h3 {
     font-size: 1.22em;
   }
 }
+
+.archive .page-heade,
+.search .page-header,
+.error404 .page-header {
+  text-align: center;
+
+  .page-title {
+   position: relative;
+   padding-bottom: 32px;
+   margin: 2rem auto;
+   letter-spacing: .2em;
+   text-align: center;
+   font-size: 1.6875em;
+  
+   @include tab {
+     margin-bottom: 3rem;
+     padding-bottom: 64px;
+     font-size: 2.78em;
+   }
+  
+   @include pc {
+     margin-bottom: 4rem;
+   }
+  
+   &::before {
+     content: "";
+     display: block;
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     margin: auto;
+     width: 34px;
+     height: 16px;
+     background: url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_takoyaki_subcolor.png) bottom no-repeat;
+     background-size: 34px auto;
+  
+     @include tab {
+       width: 68px;
+       height: 32px;
+       background-size: auto;
+     }
+    }
+  }
+}
+
 .entry {
   .entry-content {
     .entry-title,
     .not-found .page-title,
     .error-404 .page-title,
     h2 {
+      margin-top: 2rem;
       margin-bottom: 2rem;
       position: relative;
       padding-bottom: 32px;
       letter-spacing: .2em;
+      text-align: center;
     
       @include tab {
         margin-bottom: 3rem;
@@ -166,7 +214,7 @@ h3 {
     h3 {
       position: relative;
       margin-top: 2.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
       padding-left: 24px;
     
       &::before,
@@ -193,26 +241,24 @@ h3 {
       color: $sub-color;
       font-weight: bold;
       margin-top: 1.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
     }
-    .wp-block-quote:not(.is-large),
-    .wp-block-quote:not(.is-style-large) {
-      padding: 1.5rem 1.5rem 1.5rem 48px;
-      border-width: 0;
-      background: $base-color-deep url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_quote.png) 54px center no-repeat;
-      background-size: 30px auto;
+  }
+}
 
-      @include pc {
-        padding: 40px 72px 40px 160px;
-        background: $base-color-deep url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_quote.png) 54px center no-repeat;
-        background-size: 60px auto;
-      }
-    }
+.error-404.not-found .page-content,
+.no-results.not-found .page-content {
+  max-width: calc(100% - 3rem);
+  margin: 0 auto;
+
+  @include pc {
+    max-width: calc(8 * (100vw / 12) - 28px);
   }
 }
 
 // entry
 .entry {
+
   .entry-header {
     text-align: center;
 
@@ -224,6 +270,7 @@ h3 {
       margin-top: 142px;
     }
   }
+
   .entry-title {
     margin-bottom: 1em;
 
@@ -231,18 +278,150 @@ h3 {
       display: none;
     }
   }
+
   .entry-content,
   .entry-summary {
     max-width: calc(100% - 3rem);
     margin: 0 auto; 
   }
+
   .entry-content > *,
   .entry-summary > * {
     margin: inherit;
-  }
-}
-.entry-content{
+    max-width: 100%;
 
+    @include pc {
+      max-width: calc(8 * (100vw / 12) - 28px);
+    }
+  }
+
+  .entry-content{
+
+    p {
+      margin: 1.25rem auto;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 1.25rem;
+      padding: 0;
+
+      li {
+        position: relative;
+        padding-left: 24px;
+
+        &::before {
+          position: absolute;
+          top: .3em;
+          left: 2px;
+          display: block;
+          content: '';
+          width: 14px;
+          height: 14px;
+          border: 3px solid $sub-color;
+          border-radius: 50%;
+        }
+      }
+    }
+   
+    ol {
+      list-style: none;
+      margin-bottom: 1.25rem;
+      padding: 0;
+
+      li {
+        position: relative;
+        padding-left: 24px;
+        counter-increment: number;
+
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 2px;
+          display: block;
+          content: counter(number) "";
+          color: $sub-color;
+          font-weight: bold;
+        }
+      }
+    }
+    
+    .wp-block-quote:not(.is-large),
+    .wp-block-quote:not(.is-style-large) {
+      padding: 1.5rem 1.5rem 1.5rem 48px;
+      border-width: 0;
+      background: $base-color-deep url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_quote.png) 9px center no-repeat;
+      background-size: 30px auto;
+      margin: 1rem auto;
+
+      @include pc {
+        padding: 40px 72px 40px 160px;
+        background: $base-color-deep url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_quote.png) 54px center no-repeat;
+        background-size: 60px auto;
+      }
+    }
+
+    .wp-block-table {
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
+
+      th, td {
+        border: 0;
+        border-top: 1px solid $body-fontcolor;
+        border-bottom: 1px solid $body-fontcolor;
+        padding: 1rem;
+      }
+
+      th {
+        background-color: $main-color-light;
+      }
+    }
+
+    .wp-block-button {
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
+
+      &:not(.is-style-squared) .wp-block-button__link {
+        border-radius: 16px 0 16px 0;
+      }
+
+      .wp-block-button__link {
+        position: relative;
+        padding: 1.5rem 3rem;
+        border: 2px solid $sub-color;
+        font-size: 1em;
+
+        &::after {
+          display: block;
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 2rem;
+          @include arrow-right--white;
+        }
+
+        &:not(.has-background) {
+          background-color: $sub-color;
+        }
+
+        &:hover {
+          color: $sub-color;
+          background: #FFF;
+          cursor: pointer;
+
+          &::after {
+            @include arrow-right--sub;
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+.entry-content{
   .l-container {
     margin: 0 auto;
     padding-right: 24px;
@@ -253,7 +432,75 @@ h3 {
     }
   }
 }
+
+//object
+.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+  background-color: $sub-color;
+  border: 2px solid $sub-color;
+
+  &:hover {
+    background-color: $white;
+    color: $sub-color;
+  }
+}
+
+// comments
+.comments-area {
+  .comments-title-wrap {
+
+    .comments-title {
+      position: relative;
+      margin-top: 2.5rem;
+      margin-bottom: 1.25rem;
+      padding-left: 24px;
+
+      &::before,
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 4px;
+        background-color: $sub-color;
+        border-radius: 2px;
+        margin: auto;
+      }
+
+      &::before {
+        height: 18px;
+        top: 4px;
+        left: 0;
+      }
+
+      &::after {
+        height: 10px;
+        top: 12px;
+        left: 8px;
+      }
+    }
+
+  }
+}
+
 //widget
+.widget {
+  a {
+    color: $sub-color;
+
+    &:visited {
+    color: $sub-color;
+    }
+  
+    &:hover,
+    &:active {
+      color: $sub-color-deep;
+    }
+    
+    &:focus {
+      outline: thin dotted;
+      text-decoration: underline;
+    }
+  }
+}
 #colophon .widget-column .widget {
 
   @include pc {
@@ -277,6 +524,7 @@ h3 {
     @include arch-wide
   }
 }
+
 .u-bg {
   position: relative;
   padding-bottom: 64px;
@@ -285,15 +533,19 @@ h3 {
     padding-bottom: 100px;
   }
 }
+
 .u-bg--basecolor {
     background: $base-color;
 }
+
 .u-bg--maincolor {
     background: $main-color;
 }
+
 .u-bg--maincolor-lignt {
     background: $main-color-light;
 }
+
 .u-arch--btm-maincolor {
   position: relative;
 
@@ -308,6 +560,7 @@ h3 {
     z-index: -1;
   }
 }
+
 .u-pad--secT-lg {
   padding-top: 48px;
 
@@ -319,6 +572,7 @@ h3 {
     padding-top: 96px;
   }
 }
+
 .u-pad--secT-md {
   padding-top: 32px;
 
@@ -330,6 +584,7 @@ h3 {
     padding-top: 72px;
   }
 }
+
 .u-pad--secB-lg {
   padding-bottom: 48px;
 
@@ -341,6 +596,7 @@ h3 {
     padding-bottom: 96px;
   }
 }
+
 .u-pad--secB-md {
   padding-bottom: 32px;
 
@@ -352,12 +608,15 @@ h3 {
     padding-bottom: 72px;
   }
 }
+
 .u-margR--md {
   margin-right: 24px;
 }
+
 .u-margL--md {
   margin-left: 24px;
 }
+
 .u-sp-margT--2em {
   margin-top: 2em;
 
@@ -365,6 +624,7 @@ h3 {
     margin-top: inherit;
   }
 }
+
 .u-align-c {
   text-align: center;
 
