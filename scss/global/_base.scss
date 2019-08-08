@@ -148,6 +148,38 @@ h3 {
     }
   }
 }
+.site-header.featured-image {
+  min-height: 320px;
+
+  &::after {
+    background: none;
+  }
+
+  .site-featured-image {
+    &::after {
+      background: $main-color;
+      transition: opacity 1200ms ease-in-out;
+      opacity: 0.7;
+      z-index: 5;
+    }
+  
+    .post-thumbnail img {
+      filter: grayscale(100%);
+      height: 240px;
+      min-height: 240px;
+    
+      @include tab {
+        height: 320px;
+        min-height: 320px;
+      }
+      @include pc {
+        height: 420px;
+        min-height: 420px;
+      }    
+    }
+    
+  }
+}
 
 .entry {
   .entry-content {
@@ -163,11 +195,13 @@ h3 {
       text-align: center;
     
       @include tab {
+        margin-top: 3rem;
         margin-bottom: 3rem;
         padding-bottom: 64px;
       }
     
       @include pc {
+        margin-top: 4rem;
         margin-bottom: 4rem;
       }
     
@@ -260,10 +294,11 @@ h3 {
 .entry {
 
   .entry-header {
+    margin: calc(3 * 1rem) auto 1rem;  
     text-align: center;
 
     @include tab {
-      margin-top: 96px;
+      margin: 96px auto 1rem;
     }
 
     @include pc {
