@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 48px;
-  background-color: rgba($white,.6);
+  background-color: rgba($white,.85);
   z-index: 10;
   font-family: $ff-mplus, sans-serif;
 
@@ -17,6 +17,7 @@
     height: 80px;
   }
 }
+
 .main-navigation {
   margin-top: 0;
   padding-top: 12px;
@@ -91,5 +92,31 @@
 
   @include pc {
     top: 80px;
+  }
+}
+.site-header.featured-image {
+
+  .main-navigation li,
+  .main-navigation a,
+  .main-navigation a + svg,
+  .social-navigation a,
+  .site-title a,
+  .site-featured-imagea a {
+    color: $body-fontcolor;
+    text-shadow: none;
+  }
+
+  .main-navigation a:hover,
+  .main-navigation a:hover + svg,
+  .social-navigation a:hover,
+  .site-title a:hover,
+  .site-featured-imagea a:hover,
+  .main-navigation a:active,
+  .main-navigation a:active + svg,
+  .social-navigation a:active,
+  .site-title a:active,
+  .site-featured-imagea a:active {
+    color: $sub-color;
+    opacity: 1;
   }
 }
