@@ -24,13 +24,13 @@
 
     > a {
       display: block;
-      width: 136px;
-      height: 61px;
+      width: 140px;
+      height: 65px;
       text-indent: -9999px;
 
       @include tab {
-        width: 272px;
-        height: 122px;
+        width: 280px;
+        height: 130px;
       }
 
       &::after {
