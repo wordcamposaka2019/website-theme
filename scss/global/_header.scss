@@ -1,4 +1,21 @@
 @charset "utf-8";
+.site-branding-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 36px;
+
+  @include tab {
+    padding-top: 16px;
+  }
+
+  @include pc {
+    padding-top: 32px;
+  }
+}
+
 #masthead {
   height: 240px;
   background: url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/img_mainvisual.jpg) center no-repeat;
@@ -9,13 +26,6 @@
   }
   @include pc {
     height: 420px;
-  }
-  .site-branding-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
   }
 
   .site-title {
@@ -105,7 +115,15 @@
   
   .site-branding-container {
     display: block;
+    width: 0;
+    height: 0;
     margin: 0;
+
+    > a {
+      &::after {
+        display: none;
+      }
+    }
   }
 
   .site-featured-image {
