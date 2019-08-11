@@ -120,3 +120,27 @@
     opacity: 1;
   }
 }
+.post-navigation {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  max-width: calc(100%-3rem);
+
+  @include pc {
+    max-width: 1020px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .nav-links {
+
+    @include pc {
+      max-width: 100%;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    a:hover {
+      color: $sub-color-deep;
+    }
+  }
+}

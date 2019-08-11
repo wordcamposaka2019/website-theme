@@ -266,8 +266,14 @@ h3 {
 // entry
 .entry {
 
+  .entry-meta a:hover,
+  .entry-footer a:hover {
+    color: $sub-color-deep;
+  }
+
   .entry-header {
-    margin: calc(3 * 1rem) auto 1rem;  
+    margin: calc(3 * 1rem) auto 1rem;
+    padding: 0 1.5rem;  
     text-align: center;
 
     @include tab {
@@ -276,6 +282,7 @@ h3 {
 
     @include pc {
       margin-top: 142px;
+      max-width: 1260px;
     }
   }
 
@@ -423,7 +430,7 @@ h3 {
 
         &:hover {
           color: $sub-color;
-          background: #FFF;
+          background: $white;
           cursor: pointer;
 
           &::after {
