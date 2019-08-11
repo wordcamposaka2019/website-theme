@@ -77,9 +77,9 @@
 }
 #colophon .site-info {
   margin: 0;
-  padding: 80+16px 24px 40px;
+  padding: 40+32+12px 24px 40px;
   background: $gray url('https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/logo_wp.png') center 40px no-repeat;
-  background-size: 40px auto;
+  background-size: 32px auto;
   text-align: center;
   color: #FFF;
   -webkit-hyphens: auto;
@@ -89,14 +89,14 @@
   word-wrap: break-word;
 
   @include tab {
-    padding: 64+72+24px 24px 64px;
+    padding: 64+56+24px 24px 64px;
     background: $gray url('https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/logo_wp.png') center 64px no-repeat;
-    background-size: 72px auto;
+    background-size: 56px auto;
   }
 
   @include pc {
-    padding: 64+80+24px 24px 64px;
+    padding: 64+64+24px 24px 64px;
     background: $gray url('https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/logo_wp.png') center 64px no-repeat;    
-    background-size: 80px auto;
+    background-size: 64px auto;
   }
 }
