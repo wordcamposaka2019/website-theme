@@ -8,16 +8,16 @@
     padding-bottom: 32px;
     letter-spacing: .2em;
     text-align: center;
-
+  
     @include tab {
       margin-bottom: 3rem;
       padding-bottom: 64px;
     }
-
+  
     @include pc {
       margin-bottom: 4rem;
     }
-
+  
     &::before {
       content: "";
       display: block;
@@ -40,7 +40,7 @@
   }
 }
 
-//sponsers
+//sponsers 
 .wcb_widget_sponsors {
   text-align: center;
 }
@@ -62,6 +62,7 @@
     img {
       width: 40px;
       height: 40px;
+      vertical-align: bottom;
 
       @include tab {
         width: 64px;
@@ -69,8 +70,8 @@
       }
 
       @include pc {
-        width: 90px;
-        height: 90px;
+        width: 80px;
+        height: 80px;
       }
     }
   }
@@ -96,7 +97,7 @@
 
   @include pc {
     padding: 64+64+24px 24px 64px;
-    background: $gray url('https://wordcamposaka2019.github.io/website-theme/images/logo_wp.svg') center 65px no-repeat;
-    background-size: 60px auto;
+    background: $gray url('https://wordcamposaka2019.github.io/website-theme/images/logo_wp.svg') center 64px no-repeat;    
+    background-size: 64px auto;
   }
 }
