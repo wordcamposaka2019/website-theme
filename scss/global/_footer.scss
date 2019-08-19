@@ -28,7 +28,7 @@
       margin: auto;
       width: 34px;
       height: 16px;
-      background: url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/icon_takoyaki_white.png) bottom no-repeat;
+      background: url('https://wordcamposaka2019.github.io/website-theme/images/icon_takoyaki_white.svg') bottom no-repeat;
       background-size: 34px auto;
 
       @include tab {
@@ -62,6 +62,7 @@
     img {
       width: 40px;
       height: 40px;
+      vertical-align: bottom;
 
       @include tab {
         width: 64px;
@@ -69,8 +70,8 @@
       }
 
       @include pc {
-        width: 90px;
-        height: 90px;
+        width: 80px;
+        height: 80px;
       }
     }
   }
@@ -78,7 +79,7 @@
 #colophon .site-info {
   margin: 0;
   padding: 40+32+12px 24px 40px;
-  background: $gray url('https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/logo_wp.png') center 40px no-repeat;
+  background: $gray url('https://wordcamposaka2019.github.io/website-theme/images/logo_wp.svg') center 40px no-repeat;
   background-size: 32px auto;
   text-align: center;
   color: #FFF;
@@ -90,13 +91,13 @@
 
   @include tab {
     padding: 64+56+24px 24px 64px;
-    background: $gray url('https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/logo_wp.png') center 64px no-repeat;
+    background: $gray url('https://wordcamposaka2019.github.io/website-theme/images/logo_wp.svg') center 64px no-repeat;
     background-size: 56px auto;
   }
 
   @include pc {
     padding: 64+64+24px 24px 64px;
-    background: $gray url('https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/logo_wp.png') center 64px no-repeat;    
+    background: $gray url('https://wordcamposaka2019.github.io/website-theme/images/logo_wp.svg') center 64px no-repeat;    
     background-size: 64px auto;
   }
 }

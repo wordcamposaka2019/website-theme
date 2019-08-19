@@ -18,7 +18,7 @@
 
 #masthead {
   height: 240px;
-  background: url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/img_mainvisual.jpg) center no-repeat;
+  background: url(https://wordcamposaka2019.github.io/website-theme/images/img_mainvisual.jpg) center no-repeat;
   background-size: cover;
 
   @include tab {
@@ -51,7 +51,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/logo-lower.png) center no-repeat;
+        background: url(https://wordcamposaka2019.github.io/website-theme/images/logo-lower.svg) center no-repeat;
         background-size: contain;
       }
     }
@@ -64,7 +64,7 @@
 
 .home #masthead {
   height: 520px;
-  background: url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/img_mainvisual.jpg) center no-repeat;
+  background: url(https://wordcamposaka2019.github.io/website-theme/images/img_mainvisual.jpg) center no-repeat;
   background-size: cover;
   @include arch-min;
 
@@ -96,7 +96,7 @@
     > a {
 
       &::after {
-        background: url(https://raw.githubusercontent.com/wordcamposaka2019/website-theme/feature/front-page/images/logo.png) center no-repeat;
+        background: url(https://wordcamposaka2019.github.io/website-theme/images/logo.svg) center no-repeat;
         background-size: contain;
       }
     }
