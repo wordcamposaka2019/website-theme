@@ -8,16 +8,16 @@
     padding-bottom: 32px;
     letter-spacing: .2em;
     text-align: center;
-  
+
     @include tab {
       margin-bottom: 3rem;
       padding-bottom: 64px;
     }
-  
+
     @include pc {
       margin-bottom: 4rem;
     }
-  
+
     &::before {
       content: "";
       display: block;
@@ -40,9 +40,72 @@
   }
 }
 
-//sponsers 
+//sponsers
 .wcb_widget_sponsors {
   text-align: center;
+  .sponsor-level {
+    margin: 0 auto 30px auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .sponsor-level-title {
+      position: relative;
+      margin-bottom: 2em;
+      width: 100%;
+      &:after {
+        position: absolute;
+        display: inline-block;
+        height: 0;
+        width: 2em;
+        content: '';
+        border-bottom: 1px solid rgba($black, 0.5);
+        left: 50%;
+        margin-left: -1em;
+        bottom: -.5em;
+      }
+    }
+    .sponsor-logo {
+      width: 100%;
+      display: block;
+      padding: 10px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &.gold {
+      .sponsor-logo {
+        width: 100%;
+        box-sizing: border-box;
+        @include tab() {
+          width: calc(100% / 2);
+        }
+      }
+    }
+    &.silver {
+      .sponsor-logo {
+        width: calc(100% / 2);
+        box-sizing: border-box;
+        @include tab() {
+          width: calc(100% / 3);
+        }
+      }
+    }
+    &.bronze {
+      .sponsor-logo {
+        width: calc(100% / 2);
+        box-sizing: border-box;
+        @include tab() {
+          width: calc(100% / 3);
+        }
+        @include pc() {
+          width: calc(100% / 4);
+        }
+      }
+    }
+  }
 }
 
 // sns
@@ -97,7 +160,7 @@
 
   @include pc {
     padding: 64+64+24px 24px 64px;
-    background: $gray url('https://wordcamposaka2019.github.io/website-theme/images/logo_wp.svg') center 64px no-repeat;    
+    background: $gray url('https://wordcamposaka2019.github.io/website-theme/images/logo_wp.svg') center 64px no-repeat;
     background-size: 64px auto;
   }
 }
