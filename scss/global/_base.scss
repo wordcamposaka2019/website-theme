@@ -90,14 +90,22 @@ h1:not(.site-title) {
 .entry-title,
 .not-found .page-title,
 .error-404 .page-title,
-.has-larger-font-size,
-h2 {
+.has-larger-font-size {
   font-size: 1.6875em;
 
   @include tab {
     font-size: 2.78em;
   }
 }
+
+h2 {
+  font-size: 1.1em;
+
+  @include tab {
+    font-size: 2em;
+  }
+}
+
 .has-regular-font-size,
 .has-large-font-size,
 .comments-title,
