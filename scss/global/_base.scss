@@ -452,6 +452,12 @@ h3 {
 
 }
 
+@include tab {
+  .hfeed .entry .entry-header {
+    margin: calc(3 * 1rem) auto calc(1rem / 2);
+  }
+}
+
 .entry-content{
   .l-container {
     margin: 0 auto;
