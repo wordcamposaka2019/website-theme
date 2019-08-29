@@ -826,7 +826,10 @@ h3 {
     .post-navigation .nav-links {
       max-width: 100%;
       width: 100%;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
   .post-navigation .nav-links a:hover {
     color: #ba6a56; }
 
