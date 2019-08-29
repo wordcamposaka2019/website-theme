@@ -304,9 +304,9 @@ h3 {
 
   .entry-content,
   .entry-summary {
-    max-width: calc(100% - 3rem);
+    max-width: calc(80% - 10rem);
     margin: 0 auto;
-    padding: 0;
+    padding: 0 60px;
   }
   .entry-footer {
     margin: 2rem auto;
