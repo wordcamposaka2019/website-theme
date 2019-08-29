@@ -411,17 +411,16 @@ h3 {
         border-right: 2px solid #d8836e;
         border-radius: 1px; }
 
-.hfeed .entry-header {
+.hfeed .entry .entry-header {
   margin: calc(3 * 1rem) auto 1rem;
   padding: 0 1.5rem;
   text-align: center; }
   @media (min-width: 768px) {
-    .hfeed .entry-header {
+    .hfeed .entry .entry-header {
       margin: 96px auto 1rem; } }
   @media (min-width: 1168px) {
-    .hfeed .entry-header {
-      margin-top: 130px;
-      max-width: 1260px; } }
+    .hfeed .entry .entry-header {
+      margin-top: 130px; } }
 
 .entry-content .l-container {
   margin: 0 auto;
