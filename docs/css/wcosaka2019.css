@@ -411,6 +411,10 @@ h3 {
         border-right: 2px solid #d8836e;
         border-radius: 1px; }
 
+@media (min-width: 768px) {
+  .hfeed .entry .entry-header {
+    margin: calc(3 * 1rem) auto calc(1rem / 2); } }
+
 .entry-content .l-container {
   margin: 0 auto;
   padding-right: 24px;
