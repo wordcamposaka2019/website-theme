@@ -78,18 +78,18 @@
   }
 
   .site-title {
-    width: 60vw;
+    width: 70vw;
     max-width: 300px;
-    height: calc(60vw * .7317);
+    height: calc(70vw * .7317);
 
     @include tab {
-      width: 500px;
+      width: 550px;
       max-width: inherit;
       height: 432px;
     }
 
     @include pc {
-      width: 600px;
+      width: 700px;
       /* height: 540px; */
     }
 

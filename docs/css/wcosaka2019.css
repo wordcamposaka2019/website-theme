@@ -667,17 +667,17 @@ h3 {
       padding-left: 200px;
       padding-right: 200px; } }
   .home #masthead .site-title {
-    width: 60vw;
+    width: 70vw;
     max-width: 300px;
-    height: calc(60vw * .7317); }
+    height: calc(70vw * .7317); }
     @media (min-width: 768px) {
       .home #masthead .site-title {
-        width: 500px;
+        width: 550px;
         max-width: inherit;
         height: 432px; } }
     @media (min-width: 1168px) {
       .home #masthead .site-title {
-        width: 600px;
+        width: 700px;
         /* height: 540px; */ } }
     .home #masthead .site-title > a::after {
       background: url(https://wordcamposaka2019.github.io/website-theme/images/logo.svg) center no-repeat;
