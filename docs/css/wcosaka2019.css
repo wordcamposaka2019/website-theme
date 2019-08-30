@@ -275,7 +275,7 @@ h3 {
       margin: 96px auto 1rem; } }
   @media (min-width: 1168px) {
     .entry .entry-header {
-      margin-top: 142px;
+      margin-top: 130px;
       max-width: 1260px; } }
 
 .entry .entry-title {
@@ -285,9 +285,9 @@ h3 {
 
 .entry .entry-content,
 .entry .entry-summary {
-  max-width: calc(100% - 3rem);
+  max-width: calc(80% - 10rem);
   margin: 0 auto;
-  padding: 0; }
+  padding: 0 60px; }
 
 .entry .entry-footer {
   margin: 2rem auto;
@@ -411,9 +411,16 @@ h3 {
         border-right: 2px solid #d8836e;
         border-radius: 1px; }
 
-@media (min-width: 768px) {
-  .hfeed .entry .entry-header {
-    margin: calc(3 * 1rem) auto calc(1rem / 2); } }
+.hfeed .entry .entry-header {
+  margin: calc(3 * 1rem) auto 1rem;
+  padding: 0 1.5rem;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .hfeed .entry .entry-header {
+      margin: 96px auto 1rem; } }
+  @media (min-width: 1168px) {
+    .hfeed .entry .entry-header {
+      margin-top: 130px; } }
 
 .entry-content .l-container {
   margin: 0 auto;
