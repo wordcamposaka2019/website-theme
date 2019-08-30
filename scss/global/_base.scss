@@ -304,9 +304,16 @@ h3 {
   @media only screen and (min-width: 768px) {
   .entry-content,
   .entry-summary {
-    max-width: calc(80% - 10rem);
     margin: 0 auto;
-    padding: 0 60px;
+
+    @include tab {
+      max-width: calc(100% - 3rem);
+    }
+
+    @include pc {
+      max-width: calc(90% - 10rem);
+      padding: 0 60px;
+    }
   }
 }
 
@@ -397,6 +404,7 @@ h3 {
     .wp-block-table {
       margin-top: 1.25rem;
       margin-bottom: 1.25rem;
+      margin: auto;
 
       th, td {
         border: 0;
