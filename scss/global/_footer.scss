@@ -40,6 +40,55 @@
   }
 }
 
+//resent_entries
+.widget_recent_entries {
+
+  ul {
+
+    @include pc {
+      max-width: 1260px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: .5rem;
+      margin: 0;
+      border-bottom: 2px dashed $base-color;
+      color: $gray;
+      font-size: 1.125rem;
+      line-height: 1.6em;
+
+      @include tab {
+        padding: 1rem;
+        font-size: 1.25rem;
+      }
+  
+      > a,
+      > span {
+        display: block;
+      }
+  
+      > a {
+        @include tab {
+          margin-left: 2rem;
+        }
+      }
+  
+      > span {
+        font-weight: normal;
+        font-size: 0.75rem;
+        
+        @include tab {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
 //sponsers
 .wcb_widget_sponsors {
   text-align: center;
