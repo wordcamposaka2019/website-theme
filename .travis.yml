@@ -20,7 +20,7 @@ before_script:
   - git checkout develop
   - rm .travis.yml
   - git add --all
-  - git commit -m "Commit before Test (JOB $TRAVIS_JOB_NUMBER)" g
+  - git commit -m "Commit before Test (JOB $TRAVIS_JOB_NUMBER)"
   - git checkout master
   - git merge --no-ff develop
 script:
