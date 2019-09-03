@@ -18,7 +18,7 @@ install:
   - npm install -g node-sass
 before_script:
   - git checkout develop
-  - rm ..travis.yml
+  - rm .travis.yml
   - git add --all
   - git commit -m "Commit before Test (JOB $TRAVIS_JOB_NUMBER)" g
   - git checkout master
