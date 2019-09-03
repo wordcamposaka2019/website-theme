@@ -564,6 +564,12 @@ h3 {
   border-radius: 1px;
 }
 
+@media (min-width: 768px) {
+  .entry .entry-content .wp-block-image .aligncenter {
+    margin: 0 auto;
+  }
+}
+
 .hfeed .entry .entry-header {
   margin: calc(3 * 1rem) auto 1rem;
   padding: 0 1.5rem;
