@@ -12,15 +12,15 @@ install:
   - git config --global user.email "osaka@wordcamp.org"
   - git config --global user.name "Travis CI"
   - cd ../../
-  - rm -rf wcosaka2018
+  - rm -rf wcosaka2019
   - git clone git@github.com:wordcamposaka2019/website-theme.git
-  - cd wcosaka2018-theme
+  - cd website-theme
   - npm install -g node-sass
 before_script:
   - git checkout develop
   - rm ..travis.yml
   - git add --all
-  - git commit -m "Commit before Test (JOB $TRAVIS_JOB_NUMBER)"
+  - git commit -m "Commit before Test (JOB $TRAVIS_JOB_NUMBER)" g
   - git checkout master
   - git merge --no-ff develop
 script:
