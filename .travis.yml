@@ -30,3 +30,6 @@ after_success:
   - git add --all
   - git commit -m "by Travis CI (JOB $TRAVIS_JOB_NUMBER)"
   - git push origin master
+notifications:
+  slack: wcosaka2019:EdVmKogIkN7afubnLVPsuaqj
+
