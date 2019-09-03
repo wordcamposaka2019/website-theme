@@ -2,7 +2,8 @@
 /**
  * Components functions and definitions.
  *
- * @package wordcamp_japan_theme
+ * @package WordCamp Osaka 2019 Theme.
+ *
  */
 
 /**
