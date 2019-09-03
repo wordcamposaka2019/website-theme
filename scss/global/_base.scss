@@ -458,6 +458,16 @@ h3 {
       }
     }
 
+    .wp-block-image {
+
+      @include tab {
+        .aligncenter {
+          margin: 0 auto;
+        }
+      }
+ 
+    }
+
   }
 
 }
