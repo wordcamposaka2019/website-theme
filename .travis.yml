@@ -4,8 +4,7 @@ node_js:
 branches:
   only: develop
 install:
-  - openssl aes-256-cbc -K $encrypted_df069a52c6e6_key -iv $encrypted_df069a52c6e6_iv
-    -in sample_key.enc -out ~/.ssh/id_rsa -d
+  - openssl aes-256-cbc -K $encrypted_a6b69bbdc90e_key -iv $encrypted_a6b69bbdc90e_iv -in sample_key.enc -out sample_key -d
   - chmod 600 ~/.ssh/id_rsa
   - echo -e "Host github.com"                >> ~/.ssh/config
   - echo -e "\n\tStrictHostKeyChecking no"   >> ~/.ssh/config
