@@ -7,8 +7,8 @@ $sub-color: #d8836e;
 $sub-color-deep: #ba6a56;
 $body-fontcolor: #444;
 $gray: #777673;
-$black: rgb(0,0,0);
-$white: rgb(255,255,255);
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
 $ff-mplus: 'M PLUS 1p';
 $ff-base: 'Noto Sans JP';
 
@@ -16,23 +16,26 @@ $ff-base: 'Noto Sans JP';
 $widepc: 1379px;
 $pc: 1168px; // PC
 $tab: 768px; // タブレット
-$sp: 600px;  // スマホ
+$sp: 600px; // スマホ
 
 @mixin widepc {
   @media (min-width: ($widepc)) {
     @content;
   }
 }
+
 @mixin pc {
   @media (min-width: ($pc)) {
     @content;
   }
 }
+
 @mixin tab {
   @media (min-width: ($tab)) {
     @content;
   }
 }
+
 @mixin sp {
   @media (min-width: ($sp)) {
     @content;
