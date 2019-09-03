@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 100%;
   overflow-x: hidden;
@@ -1165,7 +1166,7 @@ h3 {
 .post-navigation {
   margin-right: 1.5rem;
   margin-left: 1.5rem;
-  max-width: calc(100%-3rem);
+  max-width: calc(100% - 3rem);
 }
 
 @media (min-width: 1168px) {
@@ -1501,3 +1502,8 @@ h3 {
 .home .l-gmap {
   width: 100%;
 }
+
+/*
+* 通常は/css/wcosaka2019.cssを生成
+* /docs/css/には何も生成しないでください
+*/
