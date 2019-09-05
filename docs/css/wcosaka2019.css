@@ -1322,7 +1322,7 @@ h3 {
 }
 
 .wcb_widget_sponsors .sponsor-level .sponsor-logo img {
-  width: 100%;
+  width: auto;
   height: auto;
 }
 
