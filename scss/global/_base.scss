@@ -729,3 +729,10 @@ h3 {
 .contact-submit {
   text-align: center;
 }
+
+
+//tiket
+.tix_tickets_table th,
+.tix_tickets_table td {
+  word-break: keep-all;
+}
