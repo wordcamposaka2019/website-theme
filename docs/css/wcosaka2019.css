@@ -835,6 +835,11 @@ h3 {
   text-align: center;
 }
 
+.tix_tickets_table th,
+.tix_tickets_table td {
+  word-break: keep-all;
+}
+
 .site-branding-container {
   display: flex;
   justify-content: center;
