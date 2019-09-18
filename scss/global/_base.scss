@@ -736,3 +736,92 @@ h3 {
 .tix_tickets_table td {
   word-break: inherit;
 }
+
+
+#tix-attendees ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.attendees li{
+  display: inline;
+  padding: 0;
+}
+
+
+.entry .entry-content .attendees li::before,
+.entry .entry-content #tix-attendees ul li::before {
+  content: none;
+}
+
+ul.attendees {
+  text-align: center;
+}
+
+
+
+@media screen and (min-width: 36em) {
+#tix-attendees ul li {
+  width: 50% !important;
+}
+}
+
+@media screen and (min-width: 48em) {
+.wcorg-organizers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.wcorg-organizer {
+  width: calc(50% - .5em);
+  margin-bottom: 1em;
+}
+
+.tix-row-coupon td {
+  width: 100% !important;
+}
+
+.tix-row-coupon td input[type="text"] {
+  display: inline-block;
+  width: calc(100% - 160px) !important;
+  margin-right: 5px;
+}
+
+.page-slug-tickets .tix_tickets_table tbody .tix-column-quantity {
+  width: 12%;
+}
+
+.page-slug-tickets input[type="submit"] {
+  margin-top: 0 !important;
+}
+
+.attendees-tab li {
+  padding: 0;
+  width: 30%;
+}
+
+.attendees-tab span {
+  display: inline;
+}
+
+#tix-attendees ul li {
+  width: calc(100% / 3) !important;
+  /* text-align: center; */
+  margin: 0 0 5em;
+}
+
+#tix-attendees ul li .avatar {
+  text-align: center;
+  margin: 10px 30px 20px;
+}
+
+#tix-attendees .tix-field {
+  margin: 0;
+}
+
+.tix-attendee-name {
+  justify-content: center;
+}
+}
