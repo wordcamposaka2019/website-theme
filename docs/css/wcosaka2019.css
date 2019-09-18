@@ -1403,7 +1403,7 @@ ul.attendees {
 .wcb_widget_sponsors .sponsor-level .sponsor-logo img {
   width: 100%;
   height: auto;
-  min-height: 100%;
+  max-height: 100%;
 }
 
 .wcb_widget_sponsors .sponsor-level.gold .sponsor-logo {
