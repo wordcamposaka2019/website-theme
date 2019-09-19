@@ -737,18 +737,39 @@ h3 {
   word-break: inherit;
 }
 
-
-#tix-attendees ul {
+#tix-attendees {
+  ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
 }
 
 .attendees li{
-  display: inline;
+  display: block;
   padding: 0;
-}
+  padding-left: 0 !important;
 
+  a{
+    color: $sub-color;
+    text-decoration: none!important;
+    &.current {
+      border-bottom: 3px solid $sub-color-deep;
+      color: $sub-color-deep;
+      font-weight: bold;
+    }
+  }
+
+  @include tab {
+  display: inline;
+  padding-left: 24px !important;
+  }
+
+  @include pc {
+    display: inline;
+    padding-left: 24px !important;
+  }
+}
 
 .entry .entry-content .attendees li::before,
 .entry .entry-content #tix-attendees ul li::before {
@@ -757,71 +778,64 @@ h3 {
 
 ul.attendees {
   text-align: center;
-}
-
-
-
-@media screen and (min-width: 36em) {
-#tix-attendees ul li {
-  width: 50% !important;
-}
-}
-
-@media screen and (min-width: 48em) {
-.wcorg-organizers {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.wcorg-organizer {
-  width: calc(50% - .5em);
-  margin-bottom: 1em;
-}
-
-.tix-row-coupon td {
-  width: 100% !important;
-}
-
-.tix-row-coupon td input[type="text"] {
-  display: inline-block;
-  width: calc(100% - 160px) !important;
-  margin-right: 5px;
-}
-
-.page-slug-tickets .tix_tickets_table tbody .tix-column-quantity {
-  width: 12%;
-}
-
-.page-slug-tickets input[type="submit"] {
-  margin-top: 0 !important;
-}
-
-.attendees-tab li {
-  padding: 0;
-  width: 30%;
-}
-
-.attendees-tab span {
-  display: inline;
+  margin-bottom: 3rem !important;
 }
 
 #tix-attendees ul li {
-  width: calc(100% / 3) !important;
-  /* text-align: center; */
-  margin: 0 0 5em;
+  width: calc(100% / 2) !important;
+  float: none !important;
+  margin: 0 0 3em;
+  padding-left: 0;
+  height: auto;
+
+  @include tab {
+    width: calc(100% / 4) !important;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  @include pc {
+    width: calc(100% / 5) !important;
+    margin: 0 0 5em;
+    text-align: center;
+  }
 }
 
 #tix-attendees ul li .avatar {
   text-align: center;
-  margin: 10px 30px 20px;
+  float: none !important;
+  margin: 0 auto;
+
+  @include tab {
+  }
+
+  @include pc {
+  }
+
 }
 
 #tix-attendees .tix-field {
   margin: 0;
+  text-align: center;
+  padding: 0 15px;
+
+  @include tab {
+  }
+
+  @include pc {
+  }
 }
 
 .tix-attendee-name {
   justify-content: center;
+	display: flex !important;
+
+.tix-first {
+	order: 2;
+}
+
+.tix-last {
+	order: 1;
+	margin-right: .5em;
 }
 }
