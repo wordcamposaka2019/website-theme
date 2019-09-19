@@ -745,10 +745,27 @@ h3 {
 }
 
 .attendees li{
-  display: inline;
+  display: block;
   padding: 0;
-}
 
+  a{
+    color: $sub-color;
+    text-decoration: none!important;
+    &.current {
+      border-bottom: 3px solid $sub-color-deep;
+      color: $sub-color-deep;
+      font-weight: bold;
+    }
+  }
+
+  @include tab {
+  display: inline;
+  }
+  
+  @include pc {
+    display: inline;
+  }
+}
 
 .entry .entry-content .attendees li::before,
 .entry .entry-content #tix-attendees ul li::before {
@@ -759,69 +776,39 @@ ul.attendees {
   text-align: center;
 }
 
-
-
-@media screen and (min-width: 36em) {
 #tix-attendees ul li {
-  width: 50% !important;
-}
-}
-
-@media screen and (min-width: 48em) {
-.wcorg-organizers {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.wcorg-organizer {
-  width: calc(50% - .5em);
-  margin-bottom: 1em;
-}
-
-.tix-row-coupon td {
   width: 100% !important;
-}
 
-.tix-row-coupon td input[type="text"] {
-  display: inline-block;
-  width: calc(100% - 160px) !important;
-  margin-right: 5px;
-}
-
-.page-slug-tickets .tix_tickets_table tbody .tix-column-quantity {
-  width: 12%;
-}
-
-.page-slug-tickets input[type="submit"] {
-  margin-top: 0 !important;
-}
-
-.attendees-tab li {
-  padding: 0;
-  width: 30%;
-}
-
-.attendees-tab span {
-  display: inline;
-}
-
-#tix-attendees ul li {
-  width: calc(100% / 3) !important;
-  /* text-align: center; */
-  margin: 0 0 5em;
+  @include tab {
+    width: calc(100% / 3) !important;
+    padding-top: 64px;
+  }
+  
+  @include pc {
+    width: calc(100% / 3) !important;
+    margin: 0 0 5em;
+  }
 }
 
 #tix-attendees ul li .avatar {
   text-align: center;
   margin: 10px 30px 20px;
+  float: none !important;
 }
 
 #tix-attendees .tix-field {
   margin: 0;
+
+  @include tab {
+    display: table-row;
+  }
+  
+  @include pc {
+    width: calc(100% / 3) !important;
+    margin: 0 0 5em;
+  }
 }
 
 .tix-attendee-name {
   justify-content: center;
-}
 }
