@@ -738,10 +738,13 @@ h3 {
 }
 
 
-#tix-attendees ul {
+#tix-attendees {
+
+  ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
 }
 
 .attendees li{
@@ -777,38 +780,59 @@ ul.attendees {
 }
 
 #tix-attendees ul li {
-  width: 100% !important;
+  width: calc(100% / 2) !important;
+  float: none !important;
+  margin: 0 0 6em;
+  padding-left: 0;
 
   @include tab {
-    width: calc(100% / 3) !important;
+    width: calc(100% / 4) !important;
     padding-top: 64px;
+    text-align: center;
   }
   
   @include pc {
-    width: calc(100% / 3) !important;
+    width: calc(100% / 5) !important;
     margin: 0 0 5em;
+    text-align: center;
   }
 }
 
 #tix-attendees ul li .avatar {
   text-align: center;
-  margin: 10px 30px 20px;
   float: none !important;
+  margin: 0 auto;
+
+  @include tab {
+  }
+
+  @include pc {
+  }
+
 }
 
 #tix-attendees .tix-field {
   margin: 0;
+  text-align: center;
+  padding: 0 15px;
 
   @include tab {
-    display: table-row;
   }
   
   @include pc {
-    width: calc(100% / 3) !important;
-    margin: 0 0 5em;
   }
 }
 
 .tix-attendee-name {
   justify-content: center;
+	display: flex !important;
+}
+
+.tix-attendee-name .tix-first {
+	order: 2;
+}
+
+.tix-attendee-name .tix-last {
+	order: 1;
+	margin-right: .5em;
 }
