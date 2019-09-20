@@ -843,12 +843,38 @@ h3 {
 #tix-attendees ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .attendees li {
-  display: inline;
+  display: block;
   padding: 0;
+  padding-left: 0 !important;
+}
+
+.attendees li a {
+  color: #d8836e;
+  text-decoration: none !important;
+}
+
+.attendees li a.current {
+  border-bottom: 3px solid #ba6a56;
+  color: #ba6a56;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .attendees li {
+    display: inline;
+    padding-left: 24px !important;
+  }
+}
+
+@media (min-width: 1168px) {
+  .attendees li {
+    display: inline;
+    padding-left: 24px !important;
+  }
 }
 
 .entry .entry-content .attendees li::before,
@@ -858,60 +884,57 @@ h3 {
 
 ul.attendees {
   text-align: center;
+  margin-bottom: 3rem !important;
 }
 
-@media screen and (min-width: 36em) {
-  #tix-attendees ul li {
-    width: 50% !important;
-  }
+#tix-attendees ul li {
+  width: calc(100% / 2) !important;
+  float: none !important;
+  margin: 0 0 3em;
+  padding-left: 0;
+  height: auto;
 }
 
-@media screen and (min-width: 48em) {
-  .wcorg-organizers {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .wcorg-organizer {
-    width: calc(50% - .5em);
-    margin-bottom: 1em;
-  }
-  .tix-row-coupon td {
-    width: 100% !important;
-  }
-  .tix-row-coupon td input[type="text"] {
-    display: inline-block;
-    width: calc(100% - 160px) !important;
-    margin-right: 5px;
-  }
-  .page-slug-tickets .tix_tickets_table tbody .tix-column-quantity {
-    width: 12%;
-  }
-  .page-slug-tickets input[type="submit"] {
-    margin-top: 0 !important;
-  }
-  .attendees-tab li {
-    padding: 0;
-    width: 30%;
-  }
-  .attendees-tab span {
-    display: inline;
-  }
+@media (min-width: 768px) {
   #tix-attendees ul li {
-    width: calc(100% / 3) !important;
-    /* text-align: center; */
-    margin: 0 0 5em;
-  }
-  #tix-attendees ul li .avatar {
+    width: calc(100% / 4) !important;
+    padding-top: 30px;
     text-align: center;
-    margin: 10px 30px 20px;
   }
-  #tix-attendees .tix-field {
-    margin: 0;
+}
+
+@media (min-width: 1168px) {
+  #tix-attendees ul li {
+    width: calc(100% / 5) !important;
+    margin: 0 0 5em;
+    text-align: center;
   }
-  .tix-attendee-name {
-    justify-content: center;
-  }
+}
+
+#tix-attendees ul li .avatar {
+  text-align: center;
+  float: none !important;
+  margin: 0 auto;
+}
+
+#tix-attendees .tix-field {
+  margin: 0;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.tix-attendee-name {
+  justify-content: center;
+  display: flex !important;
+}
+
+.tix-attendee-name .tix-first {
+  order: 2;
+}
+
+.tix-attendee-name .tix-last {
+  order: 1;
+  margin-right: .5em;
 }
 
 .site-branding-container {
