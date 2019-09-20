@@ -1587,7 +1587,7 @@ ul.attendees {
 
 @media (min-width: 1168px) {
   .home .entry-content .wp-block-column {
-    max-width: 606px;
+    max-width: 420px;
   }
 }
 
