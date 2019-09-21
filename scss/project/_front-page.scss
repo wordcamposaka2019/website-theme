@@ -26,13 +26,16 @@
     .wp-block-column {
       margin-right: 24px;
       margin-left: 24px;
+      max-width: 420px;
 
       @include sp {
         flex-basis: calc(50% - 48px);
       }
-
-      @include pc {
-        max-width: 420px;      }
+    }
+    .p-front_with {
+      .wp-block-column {
+        max-width: 606px;
+      }
     }
     .p-cnt--outline {
 
