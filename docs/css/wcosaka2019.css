@@ -1485,6 +1485,23 @@ ul.attendees {
   }
 }
 
+.wcb_widget_sponsors .sponsor-level.kids .sponsor-logo {
+  width: calc(100% / 2);
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .wcb_widget_sponsors .sponsor-level.kids .sponsor-logo {
+    width: calc(100% / 3);
+  }
+}
+
+@media (min-width: 1168px) {
+  .wcb_widget_sponsors .sponsor-level.kids .sponsor-logo {
+    width: calc(100% / 4);
+  }
+}
+
 .p-sns {
   padding-left: 0;
   text-align: center;
