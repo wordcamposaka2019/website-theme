@@ -273,3 +273,17 @@ tr.wcpt-time-1645 td:last-of-type:before {
     }
   }
 }
+
+// Speakers
+.speaker-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+
+  .avatar {
+    width: auto;
+    height: auto;
+    max-width: 96px;
+  }
+}
