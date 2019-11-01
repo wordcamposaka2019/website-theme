@@ -76,29 +76,26 @@ table.wcpt-schedule {
     }
   }
 
-  .wcpt-time-1030 td:last-of-type,
-  .wcpt-time-1130 td:nth-of-type(2),
-  .wcpt-time-1230 td:nth-of-type(2),
-  .wcpt-time-1320 td.wcpt-session-empty,
-  .wcpt-time-1345 td:nth-of-type(2),
-  .wcpt-time-1445 td:nth-of-type(2),
-  .wcpt-time-1545 td:nth-of-type(2),
-  .wcpt-time-1600 td:last-of-type,
-  .wcpt-time-1645 td:last-of-type {
+  td[class*="wcb-session-break-"],
+  td[class*="wcb-session-short-break-"],
+  td[class*="wcb-session-lunch-break-"] {
     background-color: #E6F7FF;
     color: #3E6F85;
     text-align: center;
   }
+
+  .wcpt-time-1320 td.wcpt-session-empty {
+    background-color: #E6F7FF;
+    color: #3E6F85;
+    text-align: center;
+  }
+
   .wcpt-time-1230 td:nth-of-type(2),
-  .wcpt-time-1600 td:last-of-type,
   .wcpt-time-1645 td:nth-of-type(2),
   td.wcpt-session-empty {
     border-top: 0;
     border-bottom: 0;
     border-left: 0;
-  }
-  .wcpt-time-1545 td:nth-of-type(2) {
-    border-bottom: 0;
   }
   td.wcpt-session-empty:not(:last-of-type) {
     border-right: 0;
@@ -206,3 +203,87 @@ tr.wcpt-time-1645 td:last-of-type:before {
 }
 
 } // end @media
+
+// Sessions
+.entry .entry-content {
+  
+  h2.session-speakers {
+    position: relative;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0;
+    padding-left: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    font-size: 1.22em;
+
+      @include tab {
+        font-size: 1.22em;
+      }
+
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 4px;
+      background-color: $sub-color;
+      border-radius: 2px;
+    }
+  
+    &::before {
+      height: 18px;
+      top: 4px;
+      left: 0;
+      right: auto;
+      bottom: auto;
+    }
+  
+    &::after {
+      height: 10px;
+      top: 12px;
+      left: 8px;
+    }
+  }
+
+  .session-categories-links {
+    a {
+      text-decoration: none;
+    }
+  }
+} 
+
+#session-speaker-names {
+  margin-left: auto;
+}
+
+.session-categories-links {
+  display: block;
+
+  a {
+    display: inline-block;
+    padding: 2px 8px;
+    background-color: $main-color-light;
+    border-radius: 3px;
+    font-size: .875rem;
+
+    &:hover,
+    &:focus {
+      background-color: $main-color;
+    }
+  }
+}
+
+// Speakers
+.speaker-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+
+  .avatar {
+    width: auto;
+    height: auto;
+    max-width: 96px;
+  }
+}
