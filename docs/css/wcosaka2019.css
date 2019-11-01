@@ -444,7 +444,7 @@ h3 {
 
 .entry .entry-content ul li::before {
   position: absolute;
-  top: .3em;
+  top: .5em;
   left: 2px;
   display: block;
   content: '';
@@ -1714,31 +1714,26 @@ table.wcpt-schedule tr {
   text-decoration: underline;
 }
 
-.wcpt-schedule .wcpt-time-1030 td:last-of-type,
-.wcpt-schedule .wcpt-time-1130 td:nth-of-type(2),
-.wcpt-schedule .wcpt-time-1230 td:nth-of-type(2),
-.wcpt-schedule .wcpt-time-1320 td.wcpt-session-empty,
-.wcpt-schedule .wcpt-time-1345 td:nth-of-type(2),
-.wcpt-schedule .wcpt-time-1445 td:nth-of-type(2),
-.wcpt-schedule .wcpt-time-1545 td:nth-of-type(2),
-.wcpt-schedule .wcpt-time-1600 td:last-of-type,
-.wcpt-schedule .wcpt-time-1645 td:last-of-type {
+.wcpt-schedule td[class*="wcb-session-break-"],
+.wcpt-schedule td[class*="wcb-session-short-break-"],
+.wcpt-schedule td[class*="wcb-session-lunch-break-"] {
+  background-color: #E6F7FF;
+  color: #3E6F85;
+  text-align: center;
+}
+
+.wcpt-schedule .wcpt-time-1320 td.wcpt-session-empty {
   background-color: #E6F7FF;
   color: #3E6F85;
   text-align: center;
 }
 
 .wcpt-schedule .wcpt-time-1230 td:nth-of-type(2),
-.wcpt-schedule .wcpt-time-1600 td:last-of-type,
 .wcpt-schedule .wcpt-time-1645 td:nth-of-type(2),
 .wcpt-schedule td.wcpt-session-empty {
   border-top: 0;
   border-bottom: 0;
   border-left: 0;
-}
-
-.wcpt-schedule .wcpt-time-1545 td:nth-of-type(2) {
-  border-bottom: 0;
 }
 
 .wcpt-schedule td.wcpt-session-empty:not(:last-of-type) {
@@ -1830,4 +1825,81 @@ div.wcb-session-favourite-icon a.fav-session-button:hover,
     border-bottom: 1px dashed #635E80;
     border-top: 1px dashed #635E80;
   }
+}
+
+.entry .entry-content h2.session-speakers {
+  position: relative;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0;
+  padding-left: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  font-size: 1.22em;
+}
+
+@media (min-width: 768px) {
+  .entry .entry-content h2.session-speakers {
+    font-size: 1.22em;
+  }
+}
+
+.entry .entry-content h2.session-speakers::before, .entry .entry-content h2.session-speakers::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 4px;
+  background-color: #d8836e;
+  border-radius: 2px;
+}
+
+.entry .entry-content h2.session-speakers::before {
+  height: 18px;
+  top: 4px;
+  left: 0;
+  right: auto;
+  bottom: auto;
+}
+
+.entry .entry-content h2.session-speakers::after {
+  height: 10px;
+  top: 12px;
+  left: 8px;
+}
+
+.entry .entry-content .session-categories-links a {
+  text-decoration: none;
+}
+
+#session-speaker-names {
+  margin-left: auto;
+}
+
+.session-categories-links {
+  display: block;
+}
+
+.session-categories-links a {
+  display: inline-block;
+  padding: 2px 8px;
+  background-color: #ffe0b1;
+  border-radius: 3px;
+  font-size: .875rem;
+}
+
+.session-categories-links a:hover, .session-categories-links a:focus {
+  background-color: #facd89;
+}
+
+.speaker-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.speaker-avatar .avatar {
+  width: auto;
+  height: auto;
+  max-width: 96px;
 }
