@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 100%;
   overflow-x: hidden;
@@ -1636,4 +1637,197 @@ ul.attendees {
 
 .home .l-gmap {
   width: 100%;
+}
+
+.entry .entry-content table.wcpt-schedule a {
+  text-decoration: none;
+}
+
+table.wcpt-schedule {
+  margin: 32px auto !important;
+}
+
+table.wcpt-schedule th,
+table.wcpt-schedule td {
+  border-color: #777673;
+}
+
+table.wcpt-schedule tr {
+  background-color: white;
+  font-size: 1rem;
+}
+
+.wcpt-schedule th.wcpt-col-time {
+  width: 12%;
+  background-color: #947D77;
+  color: white;
+  font-size: 0.9375rem;
+  font-weight: bold;
+}
+
+.wcpt-schedule .wcpt-col-track {
+  width: 22%;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+.wcpt-schedule .wcpt-col-track .wcpt-track-description {
+  display: block;
+  font-size: .875rem;
+}
+
+.wcpt-schedule th.wcpt-col-track:nth-of-type(2) {
+  background-color: #FFF1AA;
+  color: #807955;
+}
+
+.wcpt-schedule th.wcpt-col-track:nth-of-type(3) {
+  background-color: #FFD7AB;
+  color: #806C56;
+}
+
+.wcpt-schedule th.wcpt-col-track:nth-of-type(4) {
+  background-color: #FFBCBC;
+  color: #805E5E;
+}
+
+.wcpt-schedule th.wcpt-col-track:nth-of-type(5) {
+  background-color: #C7BCFF;
+  color: #635E80;
+}
+
+.wcpt-schedule td.wcpt-time {
+  background-color: #E8DAD7;
+  color: #947D77;
+  word-break: keep-all;
+  text-align: center;
+}
+
+.wcpt-schedule .wcpt-session-speakers a {
+  display: block;
+  font-size: .875rem;
+  color: #444;
+}
+
+.wcpt-schedule .wcpt-session-speakers a:hover, .wcpt-schedule .wcpt-session-speakers a:focus {
+  color: #ba6a56;
+  text-decoration: underline;
+}
+
+.wcpt-schedule .wcpt-time-1030 td:last-of-type,
+.wcpt-schedule .wcpt-time-1130 td:nth-of-type(2),
+.wcpt-schedule .wcpt-time-1230 td:nth-of-type(2),
+.wcpt-schedule .wcpt-time-1320 td.wcpt-session-empty,
+.wcpt-schedule .wcpt-time-1345 td:nth-of-type(2),
+.wcpt-schedule .wcpt-time-1445 td:nth-of-type(2),
+.wcpt-schedule .wcpt-time-1545 td:nth-of-type(2),
+.wcpt-schedule .wcpt-time-1600 td:last-of-type,
+.wcpt-schedule .wcpt-time-1645 td:last-of-type {
+  background-color: #E6F7FF;
+  color: #3E6F85;
+  text-align: center;
+}
+
+.wcpt-schedule .wcpt-time-1230 td:nth-of-type(2),
+.wcpt-schedule .wcpt-time-1600 td:last-of-type,
+.wcpt-schedule .wcpt-time-1645 td:nth-of-type(2),
+.wcpt-schedule td.wcpt-session-empty {
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.wcpt-schedule .wcpt-time-1545 td:nth-of-type(2) {
+  border-bottom: 0;
+}
+
+.wcpt-schedule td.wcpt-session-empty:not(:last-of-type) {
+  border-right: 0;
+}
+
+.wcpt-schedule .wcpt-time-1805 td.wcpt-session-empty:not(:last-of-type) {
+  border-bottom: 1px solid #777673;
+}
+
+.wcpt-schedule .wcpt-time-1015 td:not(:last-of-type),
+.wcpt-schedule .wcpt-time-1030 td:not(:last-of-type),
+.wcpt-schedule .wcpt-time-1645 td:nth-of-type(2),
+.wcpt-schedule .wcpt-time-1700 td:not(:last-of-type),
+.wcpt-schedule .wcpt-time-1745 td:not(:last-of-type),
+.wcpt-schedule .wcpt-time-1805 td:not(:last-of-type) {
+  background-color: #e8dad7;
+  color: #947d77;
+  text-align: center;
+}
+
+div.wcb-session-favourite-icon a.fav-session-button:hover,
+#content a.fav-session-button:hover {
+  color: #FFD7AB;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+  .wcpt-schedule .wcpt-time {
+    border-bottom: 1px solid #777673;
+    padding: 4px 1rem;
+    font-size: 1rem;
+  }
+  .wcpt-schedule td.wcpt-session-empty {
+    display: none;
+  }
+  .wcpt-schedule span.wcpt-session-speakers:before {
+    color: #777673;
+    content: "Speaker: ";
+    font-style: normal;
+  }
+  .wcpt-schedule .wcpt-session-speakers a {
+    display: inline-block;
+  }
+  .wcpt-session-type-session:before {
+    padding: 4px 10px;
+  }
+  tr[class^="wcpt-time-"] td:nth-of-type(2):before {
+    background-color: #FFF1AA;
+    color: #807955;
+    border-bottom: 1px dashed #807955;
+    border-top: 1px dashed #807955;
+  }
+  tr[class^="wcpt-time-"] td:nth-of-type(3):before {
+    background-color: #FFD7AB;
+    color: #806C56;
+    border-bottom: 1px dashed #806C56;
+    border-top: 1px dashed #806C56;
+  }
+  tr[class^="wcpt-time-"] td:nth-of-type(4):before {
+    background-color: #FFBCBC;
+    color: #805E5E;
+    border-bottom: 1px dashed #805E5E;
+    border-top: 1px dashed #805E5E;
+  }
+  tr[class^="wcpt-time-"] td:nth-of-type(5):before {
+    background-color: #C7BCFF;
+    color: #635E80;
+    border-bottom: 1px dashed #635E80;
+    border-top: 1px dashed #635E80;
+  }
+  tr.wcpt-time-1645 td:nth-of-type(2):before {
+    background-color: #947D77;
+    color: white;
+    content: 'セミナー室 201,202,203';
+    border-bottom: 1px dashed #E8DAD7;
+    border-top: 1px dashed #E8DAD7;
+    display: block;
+    font-size: 110%;
+    line-height: 1;
+    margin-bottom: 8px;
+    padding: 4px 10px;
+  }
+  tr.wcpt-time-1645 td:last-of-type:before {
+    display: block;
+    content: '常翔ホール';
+    background-color: #C7BCFF;
+    color: #635E80;
+    border-bottom: 1px dashed #635E80;
+    border-top: 1px dashed #635E80;
+  }
 }
