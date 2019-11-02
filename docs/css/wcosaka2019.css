@@ -1650,6 +1650,7 @@ table.wcpt-schedule {
 table.wcpt-schedule th,
 table.wcpt-schedule td {
   border-color: #777673;
+  word-break: break-word;
 }
 
 table.wcpt-schedule tr {
@@ -1699,12 +1700,15 @@ table.wcpt-schedule tr {
 .wcpt-schedule td.wcpt-time {
   background-color: #E8DAD7;
   color: #947D77;
-  word-break: keep-all;
   text-align: center;
 }
 
-.wcpt-schedule .wcpt-session-speakers a {
+.wcpt-schedule .wcpt-session-speakers {
   display: block;
+}
+
+.wcpt-schedule .wcpt-session-speakers a {
+  display: inline-block;
   font-size: .875rem;
   color: #444;
 }
@@ -1729,7 +1733,7 @@ table.wcpt-schedule tr {
 }
 
 .wcpt-schedule .wcpt-time-1230 td:nth-of-type(2),
-.wcpt-schedule .wcpt-time-1645 td:nth-of-type(2),
+.wcpt-schedule .wcpt-time-1645 td.wcb-session-track-closed,
 .wcpt-schedule td.wcpt-session-empty {
   border-top: 0;
   border-bottom: 0;
@@ -1740,16 +1744,18 @@ table.wcpt-schedule tr {
   border-right: 0;
 }
 
-.wcpt-schedule .wcpt-time-1805 td.wcpt-session-empty:not(:last-of-type) {
+.wcpt-schedule .wcpt-time-1805 td.wcpt-session-empty,
+.wcpt-schedule tr:last-of-type {
   border-bottom: 1px solid #777673;
 }
 
-.wcpt-schedule .wcpt-time-1015 td:not(:last-of-type),
-.wcpt-schedule .wcpt-time-1030 td:not(:last-of-type),
+.wcpt-schedule .wcpt-time-1015 td.wcpt-session-empty,
+.wcpt-schedule .wcpt-time-1030 td.wcpt-session-empty,
+.wcpt-schedule .wcpt-time-1630 td.wcpt-session-empty,
 .wcpt-schedule .wcpt-time-1645 td:nth-of-type(2),
-.wcpt-schedule .wcpt-time-1700 td:not(:last-of-type),
-.wcpt-schedule .wcpt-time-1745 td:not(:last-of-type),
-.wcpt-schedule .wcpt-time-1805 td:not(:last-of-type) {
+.wcpt-schedule .wcpt-time-1700 td.wcpt-session-empty,
+.wcpt-schedule .wcpt-time-1745 td.wcpt-session-empty,
+.wcpt-schedule .wcpt-time-1805 td.wcpt-session-empty {
   background-color: #e8dad7;
   color: #947d77;
   text-align: center;
@@ -1816,14 +1822,33 @@ div.wcb-session-favourite-icon a.fav-session-button:hover,
     line-height: 1;
     margin-bottom: 8px;
     padding: 4px 10px;
+    text-align: left;
   }
   tr.wcpt-time-1645 td:last-of-type:before {
-    display: block;
-    content: '常翔ホール';
     background-color: #C7BCFF;
     color: #635E80;
+    content: '常翔ホール';
     border-bottom: 1px dashed #635E80;
     border-top: 1px dashed #635E80;
+    display: block;
+    font-size: 110%;
+    line-height: 1;
+    margin-bottom: 8px;
+    padding: 4px 10px;
+    text-align: left;
+  }
+  tr.wcpt-time-1045 td.wcb-session-contribution-time:before {
+    background-color: #947D77;
+    color: white;
+    content: '1号室,2号室,12号室';
+    border-bottom: 1px dashed #E8DAD7;
+    border-top: 1px dashed #E8DAD7;
+    display: block;
+    font-size: 110%;
+    line-height: 1;
+    margin-bottom: 8px;
+    padding: 4px 10px;
+    text-align: left;
   }
 }
 
@@ -1902,4 +1927,15 @@ div.wcb-session-favourite-icon a.fav-session-button:hover,
   width: auto;
   height: auto;
   max-width: 96px;
+}
+
+.wcorg-speaker-description {
+  margin-bottom: 4rem;
+}
+
+.wcorg-speaker-description .avatar {
+  width: auto;
+  height: auto;
+  max-width: 96px;
+  margin: 1rem auto;
 }
