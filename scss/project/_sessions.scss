@@ -196,15 +196,34 @@ tr.wcpt-time-1645 td:nth-of-type(2):before {
   line-height: 1;
   margin-bottom: 8px;
   padding: 4px 10px;
+  text-align: left;
 }
 
 tr.wcpt-time-1645 td:last-of-type:before {
-  display: block;
-  content: '常翔ホール';
   background-color: #C7BCFF;
   color: #635E80;
+  content: '常翔ホール';
   border-bottom: 1px dashed #635E80;
   border-top: 1px dashed #635E80;
+  display: block;
+  font-size: 110%;
+  line-height: 1;
+  margin-bottom: 8px;
+  padding: 4px 10px;
+  text-align: left;
+}
+tr.wcpt-time-1045 td.wcb-session-contribution-time:before {
+  background-color: #947D77;
+  color: $white;
+  content: '1号室,2号室,12号室';
+  border-bottom: 1px dashed #E8DAD7;
+  border-top: 1px dashed #E8DAD7;
+  display: block;
+  font-size: 110%;
+  line-height: 1;
+  margin-bottom: 8px;
+  padding: 4px 10px;
+  text-align: left;
 }
 
 } // end @media
