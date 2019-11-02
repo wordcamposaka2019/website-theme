@@ -12,6 +12,7 @@ table.wcpt-schedule {
   th,
   td {
     border-color: $gray;
+    word-break: break-word;
   }
 
   tr {
@@ -60,19 +61,21 @@ table.wcpt-schedule {
   td.wcpt-time {
     background-color: #E8DAD7;
     color: #947D77;
-    word-break: keep-all;
     text-align: center;
   }
 
-  .wcpt-session-speakers a {
+  .wcpt-session-speakers {
     display: block;
-    font-size: .875rem;
-    color: #444;
+    a {
+      display: inline-block;
+      font-size: .875rem;
+      color: #444;
 
-    &:hover,
-    &:focus {
-      color: $sub-color-deep;
-      text-decoration: underline;
+      &:hover,
+      &:focus {
+        color: $sub-color-deep;
+        text-decoration: underline;
+      }
     }
   }
 
@@ -91,7 +94,7 @@ table.wcpt-schedule {
   }
 
   .wcpt-time-1230 td:nth-of-type(2),
-  .wcpt-time-1645 td:nth-of-type(2),
+  .wcpt-time-1645 td.wcb-session-track-closed,
   td.wcpt-session-empty {
     border-top: 0;
     border-bottom: 0;
@@ -100,15 +103,17 @@ table.wcpt-schedule {
   td.wcpt-session-empty:not(:last-of-type) {
     border-right: 0;
   }
-  .wcpt-time-1805 td.wcpt-session-empty:not(:last-of-type) {
+  .wcpt-time-1805 td.wcpt-session-empty,
+  tr:last-of-type {
     border-bottom: 1px solid $gray;
   }
-  .wcpt-time-1015 td:not(:last-of-type),
-  .wcpt-time-1030 td:not(:last-of-type),
+  .wcpt-time-1015 td.wcpt-session-empty,
+  .wcpt-time-1030 td.wcpt-session-empty,
+  .wcpt-time-1630 td.wcpt-session-empty,
   .wcpt-time-1645 td:nth-of-type(2),
-  .wcpt-time-1700 td:not(:last-of-type),
-  .wcpt-time-1745 td:not(:last-of-type),
-  .wcpt-time-1805 td:not(:last-of-type) {
+  .wcpt-time-1700 td.wcpt-session-empty,
+  .wcpt-time-1745 td.wcpt-session-empty,
+  .wcpt-time-1805 td.wcpt-session-empty{
     background-color: #e8dad7;
     color: #947d77;
     text-align: center;
@@ -285,5 +290,15 @@ tr.wcpt-time-1645 td:last-of-type:before {
     width: auto;
     height: auto;
     max-width: 96px;
+  }
+}
+.wcorg-speaker-description {
+  margin-bottom: 4rem;
+
+    .avatar {
+    width: auto;
+    height: auto;
+    max-width: 96px;
+    margin: 1rem auto;
   }
 }
