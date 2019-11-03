@@ -1939,3 +1939,91 @@ div.wcb-session-favourite-icon a.fav-session-button:hover,
   max-width: 96px;
   margin: 1rem auto;
 }
+
+.entry .entry-content .wcorg-organizers h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 32px;
+  letter-spacing: .2em;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .entry .entry-content .wcorg-organizers h2 {
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 48px;
+    letter-spacing: .1em;
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1168px) {
+  .entry .entry-content .wcorg-organizers h2 {
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.entry .entry-content .wcorg-organizers h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 34px;
+  height: 16px;
+  background: url(https://wordcamposaka2019.github.io/website-theme/images/icon_takoyaki_subcolor.svg) bottom no-repeat;
+  background-size: 34px auto;
+}
+
+@media (min-width: 768px) {
+  .entry .entry-content .wcorg-organizers h2::before {
+    width: 51px;
+    height: 24px;
+    background-size: 51px auto;
+  }
+}
+
+.wcorg-organizers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wcorg-organizers .wcorg-organizer {
+  flex-basis: 100%;
+}
+
+@media (min-width: 600px) {
+  .wcorg-organizers .wcorg-organizer {
+    flex-basis: 50%;
+  }
+  .wcorg-organizers .wcorg-organizer:nth-of-type(2n-1) {
+    padding-right: 1.5rem;
+  }
+  .wcorg-organizers .wcorg-organizer:nth-of-type(2n) {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (min-width: 1168px) {
+  .wcorg-organizers .wcorg-organizer {
+    flex-basis: 50%;
+  }
+  .wcorg-organizers .wcorg-organizer:nth-of-type(2n-1) {
+    padding-right: 2rem;
+  }
+  .wcorg-organizers .wcorg-organizer:nth-of-type(2n) {
+    padding-left: 2rem;
+  }
+}
+
+.wcorg-organizer-description .avatar {
+  width: auto;
+  height: auto;
+  max-width: 96px;
+  margin: 0 auto;
+}
