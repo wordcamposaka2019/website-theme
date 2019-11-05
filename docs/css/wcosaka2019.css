@@ -1956,6 +1956,11 @@ div.wcb-session-favourite-icon a.fav-session-button:hover,
   margin: 1rem auto;
 }
 
+.single-wcb_session .entry-meta,
+.single-wcb_session .author-bio {
+  display: none;
+}
+
 .entry .entry-content .wcorg-organizers h2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
