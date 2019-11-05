@@ -129,7 +129,7 @@ div.wcb-session-favourite-icon a.fav-session-button:hover,
 @media screen and (max-width: 700px) {
 
 .wcpt-schedule {
-  
+
   .wcpt-time {
     border-bottom: 1px solid $gray;
     padding: 4px 1rem;
@@ -161,21 +161,21 @@ tr[class^="wcpt-time-"] {
       border-bottom: 1px dashed #666044;
       border-top: 1px dashed #666044;
   }
-  
+
   td:nth-of-type(3):before {
       background-color: #FFD7AB;
       color: #665645;
       border-bottom: 1px dashed #665645;
       border-top: 1px dashed #665645;
   }
-  
+
   td:nth-of-type(4):before {
       background-color: #FFBCBC;
       color: #664B4B;
       border-bottom: 1px dashed #664B4B;
       border-top: 1px dashed #664B4B;
   }
-  
+
   td:nth-of-type(5):before {
       background-color: #C7BCFF;
       color: #4F4B66;
@@ -267,7 +267,7 @@ tr.wcpt-time-1045 td.wcb-session-contribution-time:before {
       background-color: $sub-color;
       border-radius: 2px;
     }
-  
+
     &::before {
       height: 18px;
       top: 4px;
@@ -275,7 +275,7 @@ tr.wcpt-time-1045 td.wcb-session-contribution-time:before {
       right: auto;
       bottom: auto;
     }
-  
+
     &::after {
       height: 10px;
       top: 12px;
@@ -288,7 +288,7 @@ tr.wcpt-time-1045 td.wcb-session-contribution-time:before {
       text-decoration: none;
     }
   }
-} 
+}
 
 #session-speaker-names {
   margin-left: auto;
@@ -332,5 +332,12 @@ tr.wcpt-time-1045 td.wcb-session-contribution-time:before {
     height: auto;
     max-width: 96px;
     margin: 1rem auto;
+  }
+}
+
+.single-wcb_session {
+  .entry-meta,
+  .author-bio {
+    display: none;
   }
 }
