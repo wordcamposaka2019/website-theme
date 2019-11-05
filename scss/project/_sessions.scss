@@ -232,12 +232,17 @@ tr.wcpt-time-1045 td.wcb-session-contribution-time:before {
 .entry .entry-content {
   .wco2019-session-alart {
     margin: 2rem auto;
-    padding: 1rem 1.5rem;
+    padding: 1em 1.5em;
     background: #FFEBCC;
     border: 1px solid #FACD89;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: small;
     color: $red;
-}
+
+    @include tab {
+      padding: 1rem 1.5rem;
+    }
+  }
 
   h2.session-speakers {
     position: relative;
