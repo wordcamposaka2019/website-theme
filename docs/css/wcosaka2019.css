@@ -1852,6 +1852,15 @@ div.wcb-session-favourite-icon a.fav-session-button:hover,
   }
 }
 
+.entry .entry-content .wco2019-session-alart {
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+  background: #FFEBCC;
+  border: 1px solid #FACD89;
+  font-weight: bold;
+  color: #FF5E5E;
+}
+
 .entry .entry-content h2.session-speakers {
   position: relative;
   margin-top: 2.5rem;
