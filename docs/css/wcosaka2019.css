@@ -1854,11 +1854,18 @@ div.wcb-session-favourite-icon a.fav-session-button:hover,
 
 .entry .entry-content .wco2019-session-alart {
   margin: 2rem auto;
-  padding: 1rem 1.5rem;
+  padding: 1em 1.5em;
   background: #FFEBCC;
   border: 1px solid #FACD89;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: small;
   color: #FF5E5E;
+}
+
+@media (min-width: 768px) {
+  .entry .entry-content .wco2019-session-alart {
+    padding: 1rem 1.5rem;
+  }
 }
 
 .entry .entry-content h2.session-speakers {
