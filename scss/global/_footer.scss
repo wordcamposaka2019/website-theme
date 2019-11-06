@@ -189,7 +189,19 @@
     }
   }
 }
+// micro sponsors
+#tix-attendees {
+  .avatar {
+    margin: .5rem auto !important;
+    width: 64px;
+    height: 64px;
 
+    @include pc {
+      width: 96px;
+      height: 96px;
+    }
+  }
+}
 // sns
 .p-sns {
   padding-left: 0;
