@@ -1383,6 +1383,7 @@ ul.attendees {
 }
 
 .widget_recent_entries ul li > span {
+  color: #444;
   font-weight: normal;
   font-size: 0.75rem;
 }
@@ -1506,6 +1507,19 @@ ul.attendees {
 @media (min-width: 1168px) {
   .wcb_widget_sponsors .sponsor-level.kids .sponsor-logo {
     width: calc(100% / 4);
+  }
+}
+
+#tix-attendees .avatar {
+  margin: .5rem auto !important;
+  width: 64px;
+  height: 64px;
+}
+
+@media (min-width: 1168px) {
+  #tix-attendees .avatar {
+    width: 96px;
+    height: 96px;
   }
 }
 
