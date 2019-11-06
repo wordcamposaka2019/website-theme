@@ -52,7 +52,7 @@
 
       > a:hover,
       > a:hover + svg {
-        color: $sub-color;
+        color: $link-color-light;
       }
 
       @include tab {
@@ -63,7 +63,7 @@
 
   button:hover,
   button:focus {
-    color: $sub-color;
+    color: $link-color-light;
   }
 
   .sub-menu {
@@ -122,7 +122,7 @@
   .social-navigation a:active,
   .site-title a:active,
   .site-featured-imagea a:active {
-    color: $sub-color;
+    color: $link-color-light;
     opacity: 1;
   }
 }
@@ -148,7 +148,7 @@
     }
 
     a:hover {
-      color: $sub-color-deep;
+      color: $link-color;
     }
   }
 }

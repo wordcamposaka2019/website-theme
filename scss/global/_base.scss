@@ -21,16 +21,16 @@ body:lang(ja), button:lang(ja), input:lang(ja), select:lang(ja), optgroup:lang(j
 
 // Links
 a {
-  color: $sub-color;
+  color: $link-color-light;
 }
 
 a:visited {
-  color: $sub-color;
+  color: $link-color-light;
 }
 
 a:hover,
 a:active {
-  color: $sub-color-deep;
+  color: $link-color;
 }
 
 a:focus {
@@ -286,7 +286,13 @@ h3 {
 
   .entry-meta a:hover,
   .entry-footer a:hover {
-    color: $sub-color-deep;
+    color: $link-color;
+  }
+
+  .entry-content > *.aligncenter,
+  .entry-summary > *.aligncenter {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .entry-header {
@@ -441,7 +447,7 @@ h3 {
       .wp-block-button__link {
         position: relative;
         padding: 1.5rem 3rem;
-        border: 2px solid $sub-color;
+        border: 2px solid $link-color-light;
         font-size: 1em;
 
         &::after {
@@ -455,11 +461,11 @@ h3 {
         }
 
         &:not(.has-background) {
-          background-color: $sub-color;
+          background-color: $link-color-light;
         }
 
         &:hover {
-          color: $sub-color;
+          color: $link-color-light;
           background: $white;
           cursor: pointer;
 
@@ -515,12 +521,12 @@ h3 {
 
 //object
 .button, button, input[type="button"], input[type="reset"], input[type="submit"] {
-  background-color: $sub-color;
-  border: 2px solid $sub-color;
+  background-color: $link-color-light;
+  border: 2px solid $link-color-light;
 
   &:hover {
     background-color: $white;
-    color: $sub-color;
+    color: $link-color-light;
   }
 }
 
@@ -564,15 +570,15 @@ h3 {
 //widget
 .widget {
   a {
-    color: $sub-color;
+    color: $link-color;
 
     &:visited {
-      color: $sub-color;
+      color: $link-color;
     }
 
     &:hover,
     &:active {
-      color: $sub-color-deep;
+      color: $link-color-deep;
     }
 
     &:focus {
@@ -751,11 +757,11 @@ h3 {
   padding-left: 0 !important;
 
   a{
-    color: $sub-color;
+    color: $link-color-light;
     text-decoration: none!important;
     &.current {
-      border-bottom: 3px solid $sub-color-deep;
-      color: $sub-color-deep;
+      border-bottom: 3px solid $link-color;
+      color: $link-color;
       font-weight: bold;
     }
   }
