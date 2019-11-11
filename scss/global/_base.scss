@@ -519,6 +519,24 @@ h3 {
   }
 }
 
+.author-bio {
+  margin: 3rem auto;
+  max-width: calc(100% - 3rem);
+
+  @include pc {
+    max-width: 1020px;
+  }
+
+  .author-description {
+    display: block;
+
+    .author-link {
+      display: inline-block;
+      margin-left: 1em;
+    }
+  }
+}
+
 //object
 .button, button, input[type="button"], input[type="reset"], input[type="submit"] {
   background-color: $link-color-light;
