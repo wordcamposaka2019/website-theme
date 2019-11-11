@@ -607,6 +607,26 @@ h3 {
   }
 }
 
+.author-bio {
+  margin: 3rem auto;
+  max-width: calc(100% - 3rem);
+}
+
+@media (min-width: 1168px) {
+  .author-bio {
+    max-width: 1020px;
+  }
+}
+
+.author-bio .author-description {
+  display: block;
+}
+
+.author-bio .author-description .author-link {
+  display: inline-block;
+  margin-left: 1em;
+}
+
 .button, button, input[type="button"], input[type="reset"], input[type="submit"] {
   background-color: #A15C4A;
   border: 2px solid #A15C4A;
