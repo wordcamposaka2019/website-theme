@@ -1997,7 +1997,9 @@ div.wcb-session-favourite-icon a.fav-session-button:hover,
 }
 
 .single-wcb_session .entry-meta,
-.single-wcb_session .author-bio {
+.single-wcb_session .author-bio,
+.single-wcb_sponsor .entry-meta,
+.single-wcb_sponsor .author-bio {
   display: none;
 }
 
