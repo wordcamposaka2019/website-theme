@@ -1707,6 +1707,7 @@ table.wcpt-schedule tr {
 }
 
 .wcpt-schedule .wcpt-col-track {
+  position: static;
   width: 22%;
   line-height: 1.4;
   font-size: 1rem;
@@ -1738,6 +1739,7 @@ table.wcpt-schedule tr {
 }
 
 .wcpt-schedule td.wcpt-time {
+  position: static;
   background-color: #F5E6E3;
   color: #665652;
   text-align: center;
@@ -1761,12 +1763,14 @@ table.wcpt-schedule tr {
 .wcpt-schedule td[class*="wcb-session-break-"],
 .wcpt-schedule td[class*="wcb-session-short-break-"],
 .wcpt-schedule td[class*="wcb-session-lunch-break-"] {
+  position: static;
   background-color: #E6F7FF;
   color: #32596b;
   text-align: center;
 }
 
 .wcpt-schedule .wcpt-time-1320 td.wcpt-session-empty {
+  position: static;
   background-color: #E6F7FF;
   color: #32596b;
   text-align: center;
@@ -1796,6 +1800,7 @@ table.wcpt-schedule tr {
 .wcpt-schedule .wcpt-time-1700 td.wcpt-session-empty,
 .wcpt-schedule .wcpt-time-1745 td.wcpt-session-empty,
 .wcpt-schedule .wcpt-time-1805 td.wcpt-session-empty {
+  position: static;
   background-color: #F5E6E3;
   color: #665652;
   text-align: center;
