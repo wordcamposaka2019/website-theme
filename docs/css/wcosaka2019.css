@@ -511,6 +511,7 @@ h3 {
   border-top: 1px solid #444;
   border-bottom: 1px solid #444;
   padding: 1rem;
+  word-break: break-all;
 }
 
 .entry .entry-content .wp-block-table th {
